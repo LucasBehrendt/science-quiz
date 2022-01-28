@@ -18,9 +18,13 @@ html {
     background-color: #21385a;
 }
 
-/* Game section */
+.hide {
+    display: none;
+}
 
-#game-section {
+/* Game wrapper */
+
+#game-wrapper {
     background-color: #021025;
     opacity: 0.98;
     height: 600px;
@@ -67,7 +71,7 @@ html {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* Welcome page */
+/* Home welcome page */
 
 #welcome-title {
     letter-spacing: 2px;
@@ -93,4 +97,16 @@ button {
 button:hover {
     background-color: #fbfeff;
     color: #021025;
+    cursor: pointer;
+}
+
+/* Menu section */
+
+.menu button {
+    display: block;
+    margin: 50px auto;
+}
+
+.menu button:nth-child(1) {
+    margin-top: 135px;
 }

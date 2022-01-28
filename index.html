@@ -15,8 +15,8 @@
     <title>Science Quiz</title>
 </head>
 <body>
-    <!-- Game section -->
-    <section id="game-section">
+    <!-- Game wrapper -->
+    <section id="game-wrapper">
         <!-- code for burger icon taken from https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
         <!-- Burger menu -->
         <div class="burger">
@@ -24,12 +24,19 @@
             <div class="burger-line-2"></div>
             <div class="burger-line-3"></div>
         </div>
-        <div id="home-section">
+        <!-- Home welcome page -->
+        <section class="home-section">
             <h1 id="welcome-title">Welcome to Science Quiz!</h1>
             <br>
             <h2 id="welcome-text">Click the Start button below to start the game.</h2>
-            <button aria-label="start-button">Start Quiz</button>
-        </div>
+            <button aria-label="start the game" id="start-btn">Start Quiz</button>
+        </section>
+        <!-- Menu page -->
+        <section class="menu hide">
+            <button aria-label="Back to home page" id="home-btn">Home</button>
+            <button aria-label="Change the difficulty" id="difficulty-btn">Difficulty</button>
+            <button aria-label="Instructions on how to play the game" id="how-to-btn">How to Play</button>
+        </section>
     </section>
 
     <script src="assets/js/script.js"></script>
