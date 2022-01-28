@@ -8,6 +8,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Dongle', sans-serif;
+    color: #fbfeff;
+    text-align: center;
 }
 
 html {
@@ -20,7 +22,7 @@ html {
 
 #game-section {
     background-color: #021025;
-    opacity: 0.9;
+    opacity: 0.98;
     height: 600px;
     width: 900px;
     top: 50%;
@@ -63,4 +65,32 @@ html {
 .change .burger-line-3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Welcome page */
+
+#welcome-title {
+    letter-spacing: 2px;
+    font-size: 250%;
+    margin-top: 75px;
+}
+
+#welcome-text {
+    letter-spacing: 1px;
+    font-size: 200%;
+    margin: 75px 0 125px;
+}
+
+button {
+    background-color: #708298;
+    width: 200px;
+    height: 75px;
+    font-size: 200%;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #fbfeff;
+    color: #021025;
 }
