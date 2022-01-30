@@ -7,10 +7,12 @@ let homeBtn = document.getElementById("home-btn")
 let difficultyBtn = document.getElementById("difficulty-btn")
 let howToBtn = document.getElementById("how-to-btn")
 let difficultyMenu = document.querySelector(".difficulty")
+let howToMenu = document.querySelector(".how-to")
 
 burger.addEventListener("click", showMenu)
 homeBtn.addEventListener("click", showHome)
 difficultyBtn.addEventListener("click", showDifficultyMenu)
+howToBtn.addEventListener("click", showHowTo)
 
 
 /**
@@ -47,4 +49,13 @@ function showDifficultyMenu() {
     burger.classList.remove("change");
     menu.classList.add("hide");
     difficultyMenu.classList.remove("hide");
+}
+
+/**
+ * When how to play button in menu is clicked, displays the how to play section
+ */
+ function showHowTo() {
+    burger.classList.remove("change");
+    menu.classList.add("hide");
+    howToMenu.classList.remove("hide");
 }
