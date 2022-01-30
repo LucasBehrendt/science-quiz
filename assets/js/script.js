@@ -2,7 +2,16 @@
 let burger = document.querySelector(".burger")
 let menu = document.querySelector(".menu")
 let home = document.querySelector(".home-section")
+let startBtn = document.getElementById("start-btn")
+let homeBtn = document.getElementById("home-btn")
+let difficultyBtn = document.getElementById("difficulty-btn")
+let howToBtn = document.getElementById("how-to-btn")
+let difficultyMenu = document.querySelector(".difficulty")
+
 burger.addEventListener("click", showMenu)
+homeBtn.addEventListener("click", showHome)
+difficultyBtn.addEventListener("click", showDifficultyMenu)
+
 
 /**
  * When menu burger icon is clicked, icon will change to a cross
@@ -20,4 +29,22 @@ function showMenu() {
         difficultyMenu.classList.add("hide");
         howToMenu.classList.add("hide");
     }
+}
+
+/**
+ * When home button in menu is clicked, displays the home section
+ */
+ function showHome() {
+    burger.classList.remove("change");
+    menu.classList.add("hide");
+    home.classList.remove("hide");
+}
+
+/**
+ * When difficulty button in menu is clicked, displays the difficulty section
+ */
+function showDifficultyMenu() {
+    burger.classList.remove("change");
+    menu.classList.add("hide");
+    difficultyMenu.classList.remove("hide");
 }
