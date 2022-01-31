@@ -99,6 +99,54 @@ button:hover {
     cursor: pointer;
 }
 
+/* Quiz game section */
+
+#home-icon {
+    position: absolute;
+    font-size: 200%;
+    top: 3%;
+    left: 2%;
+    cursor: pointer;
+}
+
+#question-count {
+    position: absolute;
+    font-size: 200%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#score {
+    position: absolute;
+    font-size: 200%;
+    top: 1%;
+    left: 85%;
+}
+
+#question-text {
+    margin: 75px;
+    font-size: 200%;
+    line-height: 25px;
+}
+
+#answer-options {
+    display: grid;
+    grid-gap: 75px 200px;
+    grid-template-columns: auto auto;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+}
+
+#next-question {
+    position: absolute;
+    left: 50%;
+    top: 83%;
+    transform: translate(-50%, -50%);
+}
+
 /* Menu section */
 
 .menu button {
