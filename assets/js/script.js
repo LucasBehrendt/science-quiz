@@ -122,6 +122,60 @@ let mediumQuestions = [
     },
 ]
 
+// Hard quiz questions
+let hardQuesions = [
+    {
+        question: "What is the name for the Sun's outer-most atmosphere?",
+        options: ["Stratosphere", "Corona", "Photosphere", "Chromosphere"],
+        answer: "Corona"
+    },
+    {
+        question: "How many watts is one horsepower equal to?",
+        options: ["746 W", "541 W", "121 W", "1981 W"],
+        answer: "746 W"
+    },
+    {
+        question: "The first vaccine targeted which disease?",
+        options: ["Rubella", "Smallpox", "Polio", "Measles"],
+        answer: "Smallpox"
+    },
+    {
+        question: "Heavy water contains what isotopic form of hydrogen?",
+        options: ["Deuterium", "Protium", "Hydrogen-4", "Tritium"],
+        answer: "Deuterium"
+    },
+    {
+        question: "What unit is resistance measured in?",
+        options: ["Gauss", "Ampere", "Joule", "Ohm"],
+        answer: "Ohm"
+    },
+    {
+        question: "Who is credited with creating the 'Big Bang Theory'?",
+        options: ["Albert Einstein", "Edwin Hubble", "Carl Sagan", "Georges Lemaitre"],
+        answer: "Georges Lemaitre"
+    },
+    {
+        question: "What is a scientist who specializes in the study of cells called?",
+        options: ["Eugenicist", "Embryologist", "Cytologist", "Histologist"],
+        answer: "Cytologist"
+    },
+    {
+        question: "The diameter of an atom is measured in which unit?",
+        options: ["Lambda", "Hebdometre", "Angstrom", "Basic module"],
+        answer: "Angstrom"
+    },
+    {
+        question: "In a triple bond, how many pi and sigma bonds are there?",
+        options: ["Three Pi, Zero Sigma", "Zero Pi, Three Sigma", "One Pi, Two Sigma", "Two Pi, One Sigma"],
+        answer: "Two Pi, One Sigma"
+    },
+    {
+        question: "About how many days does it take for the moon to pass through all phases?",
+        options: ["28", "29", "30", "31"],
+        answer: "29"
+    },
+]
+
 /**
  * When menu burger icon is clicked, icon will change to a cross
  * and the menu will be displayed
