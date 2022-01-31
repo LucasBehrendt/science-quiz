@@ -68,6 +68,59 @@ let easyQuestions = [
     },
 ]
 
+// Medium quiz questions
+let mediumQuestions = [
+    {
+        question: "Which company manufactures Pentium chipsets?",
+        options: ["AMD", "Microsoft", "Intel", "Apple"],
+        answer: "Intel"
+    },
+    {
+        question: "What is the name for the boundary around a black hole, beyond which events cannot affect the observer?",
+        options: ["Event Horizon", "Absolute Point", "Black Line", "Event Silence"],
+        answer: "Event Horizon"
+    },
+    {
+        question: "What is table salt's chemical name?",
+        options: ["Lithium Chloride", "Potassium", "Sodium Chloride", "Sodium Hydroxide"],
+        answer: "Sodium Chloride"
+    },
+    {
+        question: "What is the wearing away of parts of the Earth by water or wind called?",
+        options: ["Corrosion", "Erosion", "Dilution", "Sedimentation"],
+        answer: "Erosion"
+    },
+    {
+        question: "What is a person who specializes in the study of plants called?",
+        options: ["Plantist", "Geologist", "Oboist", "Botanist"],
+        answer: "Botanist"
+    },
+    {
+        question: "Between which two planets does the asteroid belt lie?",
+        options: ["Uranus and Neptune", "Jupiter and Saturn", "Mars and Jupiter", "Mercury and Venus"],
+        answer: "Mars and Jupiter"
+    },
+    {
+        question: "What disaster is a combo of downdrafts and updrafts?",
+        options: ["Snowstorm", "Tsunami", "Volcanic Eruption", "Tornado"],
+        answer: "Tornado"
+    },
+    {
+        question: "What are the small bones that make up a backbone called?",
+        options: ["Sternum", "Vertebrae", "Maxilla", "Ulna"],
+        answer: "Vertebrae"
+    },
+    {
+        question: "What is the chemical symbol for gold?",
+        options: ["Ag", "Pb", "Fe", "Au"],
+        answer: "Au"
+    },
+    {
+        question: "Who was the first person in space?",
+        options: ["Yuri Gagarin", "Laika", "Neil Armstrong", "Valentina Tereshkova"],
+        answer: "Yuri Gagarin"
+    },
+]
 
 /**
  * When menu burger icon is clicked, icon will change to a cross
