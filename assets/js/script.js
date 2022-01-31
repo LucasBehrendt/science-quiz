@@ -8,8 +8,10 @@ let difficultyBtn = document.getElementById("difficulty-btn")
 let howToBtn = document.getElementById("how-to-btn")
 let difficultyMenu = document.querySelector(".difficulty")
 let howToMenu = document.querySelector(".how-to")
+let quizGame = document.querySelector(".quiz-game")
 
 burger.addEventListener("click", showMenu)
+startBtn.addEventListener("click", runGame)
 homeBtn.addEventListener("click", showHome)
 difficultyBtn.addEventListener("click", showDifficultyMenu)
 howToBtn.addEventListener("click", showHowTo)
@@ -192,6 +194,18 @@ function showMenu() {
         difficultyMenu.classList.add("hide");
         howToMenu.classList.add("hide");
     }
+}
+
+/**
+ * When start button or one of the difficulty select buttons are clicked, 
+ * displays the quiz game and starts the quiz
+ */
+function runGame() {
+    burger.classList.remove("change");
+    burger.classList.add("hide");
+    home.classList.add("hide");
+    difficultyMenu.classList.add("hide");
+    quizGame.classList.remove("hide");
 }
 
 /**
