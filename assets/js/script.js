@@ -12,6 +12,7 @@ let mediumBtn = document.getElementById("medium-btn");
 let hardBtn = document.getElementById("hard-btn");
 let howToMenu = document.querySelector(".how-to");
 let quizGame = document.querySelector(".quiz-game");
+let homeIcon = document.getElementById("home-icon")
 let questionText = document.getElementById("question-text")
 let answerBtn1 = document.getElementById("answer-btn-1");
 let answerBtn2 = document.getElementById("answer-btn-2");
@@ -26,6 +27,7 @@ startBtn.addEventListener("click", runGame);
 easyBtn.addEventListener("click", runGame);
 mediumBtn.addEventListener("click", runGame);
 hardBtn.addEventListener("click", runGame);
+homeIcon.addEventListener("click", reload)
 homeBtn.addEventListener("click", showHome);
 difficultyBtn.addEventListener("click", showDifficultyMenu);
 howToBtn.addEventListener("click", showHowTo);
@@ -301,4 +303,11 @@ function showDifficultyMenu() {
     burger.classList.remove("change");
     menu.classList.add("hide");
     howToMenu.classList.remove("hide");
+}
+
+/**
+ * Reloads the site
+ */
+ function reload() {
+    window.location.reload()
 }
