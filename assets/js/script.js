@@ -12,6 +12,14 @@ let mediumBtn = document.getElementById("medium-btn");
 let hardBtn = document.getElementById("hard-btn");
 let howToMenu = document.querySelector(".how-to");
 let quizGame = document.querySelector(".quiz-game");
+let questionText = document.getElementById("question-text")
+let answerBtn1 = document.getElementById("answer-btn-1");
+let answerBtn2 = document.getElementById("answer-btn-2");
+let answerBtn3 = document.getElementById("answer-btn-3");
+let answerBtn4 = document.getElementById("answer-btn-4");
+let nextQuestionBtn = document.getElementById("next-question")
+let currentQuestion = 0;
+let shuffledQuestions = 0;
 
 burger.addEventListener("click", showMenu);
 startBtn.addEventListener("click", runGame);
@@ -22,6 +30,7 @@ homeBtn.addEventListener("click", showHome);
 difficultyBtn.addEventListener("click", showDifficultyMenu);
 howToBtn.addEventListener("click", showHowTo);
 
+// All quiz questions taken from https://www.triviawell.com/questions/science
 // Easy quiz questions
 let easyQuestions = [
     {
@@ -131,7 +140,7 @@ let mediumQuestions = [
 ];
 
 // Hard quiz questions
-let hardQuesions = [
+let hardQuestions = [
     {
         question: "What is the name for the Sun's outer-most atmosphere?",
         options: ["Stratosphere", "Corona", "Photosphere", "Chromosphere"],
@@ -184,6 +193,7 @@ let hardQuesions = [
     }
 ];
 
+// Shuffle array source: https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
 /**
  * When start button or one of the difficulty select buttons are clicked, 
  * displays the quiz game and starts the quiz
@@ -195,15 +205,29 @@ let hardQuesions = [
     difficultyMenu.classList.add("hide");
     quizGame.classList.remove("hide");
     let difficulty = event.target.id;
-    if (difficulty === "start-btn" || "easy-btn") {
-        // Shuffle array source: https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
-        let shuffledEasy = easyQuestions.sort(() => 0.5 - Math.random());
+    if (difficulty === "start-btn") {
+        shuffledQuestions = easyQuestions.sort(() => 0.5 - Math.random());
+    } else if (difficulty === "easy-btn") {
+        shuffledQuestions = easyQuestions.sort(() => 0.5 - Math.random());
+    } else if (difficulty === "medium-btn") {
+        shuffledQuestions = mediumQuestions.sort(() => 0.5 - Math.random());
+    } else if (difficulty === "hard-btn") {
+        shuffledQuestions = hardQuestions.sort(() => 0.5 - Math.random());
     }
     displayQuestion();
+    console.log(hardQuestions)
 }
 
 function displayQuestion() {
-   
+    if (currentQuestion <= 10) {
+        for (let i = 0; i < shuffledQuestions.length; i++) {
+            questionText.innerHTML = shuffledQuestions[0].question;
+            answerBtn1.innerHTML = shuffledQuestions[0].options[0];
+            answerBtn2.innerHTML = shuffledQuestions[0].options[1];
+            answerBtn3.innerHTML = shuffledQuestions[0].options[2];
+            answerBtn4.innerHTML = shuffledQuestions[0].options[3];
+        }
+    }
 }
 
 /**

@@ -1,4 +1,4 @@
-/* Google Fonts */
+/* Google Fonts https://fonts.google.com/specimen/Dongle */
 
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
@@ -12,6 +12,8 @@
     text-align: center;
     letter-spacing: 2px;
 }
+
+/* Background image source: https://unsplash.com/photos/Mm1VIPqd0OA */
 
 html {
     background: url(../images/dna-strain.jpg) no-repeat center center fixed;
@@ -91,6 +93,7 @@ button {
     font-size: 200%;
     border: none;
     border-radius: 5px;
+    line-height: 25px;
 }
 
 button:hover {
@@ -129,6 +132,8 @@ button:hover {
     font-size: 200%;
     line-height: 25px;
 }
+
+/* Display grid source: https://www.w3schools.com/css/css_grid.asp */
 
 #answer-options {
     display: grid;
