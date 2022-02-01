@@ -133,6 +133,14 @@ button:hover {
     line-height: 25px;
 }
 
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}
+
 /* Display grid source: https://www.w3schools.com/css/css_grid.asp */
 
 #answer-options {

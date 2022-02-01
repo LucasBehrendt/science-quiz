@@ -215,9 +215,11 @@ let hardQuestions = [
         shuffledQuestions = hardQuestions.sort(() => 0.5 - Math.random());
     }
     displayQuestion();
-    console.log(hardQuestions)
 }
 
+/**
+ * Displays the questions and options on the quiz page
+ */
 function displayQuestion() {
     if (currentQuestion <= 10) {
         for (let i = 0; i < shuffledQuestions.length; i++) {
@@ -226,8 +228,34 @@ function displayQuestion() {
             answerBtn2.innerHTML = shuffledQuestions[0].options[1];
             answerBtn3.innerHTML = shuffledQuestions[0].options[2];
             answerBtn4.innerHTML = shuffledQuestions[0].options[3];
+            answerBtn1.addEventListener("click", checkAnswer);
+            answerBtn2.addEventListener("click", checkAnswer);
+            answerBtn3.addEventListener("click", checkAnswer);
+            answerBtn4.addEventListener("click", checkAnswer);
         }
+    } else {
+        quizGame.classList.add("hide");
+        result.classList.remove("hide");
     }
+}
+
+/**
+ * When the player clicks an option, checks to see if the correct answer was clicked
+ */
+function checkAnswer() {
+    if (this.innerHTML === shuffledQuestions[0].answer) {
+        // alert('correct');
+        incrementScore()
+        this.classList.add("correct")
+    }
+}
+
+/**
+ * Increments the score when a correct answer is submitted
+ */
+function incrementScore() {
+    let lastScore = document.getElementById("score-count").innerHTML;
+    document.getElementById("score-count").innerHTML = ++lastScore;
 }
 
 /**
