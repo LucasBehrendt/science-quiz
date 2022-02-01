@@ -1,20 +1,26 @@
 // Get variables & add event listeners
-let burger = document.querySelector(".burger")
-let menu = document.querySelector(".menu")
-let home = document.querySelector(".home-section")
-let startBtn = document.getElementById("start-btn")
-let homeBtn = document.getElementById("home-btn")
-let difficultyBtn = document.getElementById("difficulty-btn")
-let howToBtn = document.getElementById("how-to-btn")
-let difficultyMenu = document.querySelector(".difficulty")
-let howToMenu = document.querySelector(".how-to")
-let quizGame = document.querySelector(".quiz-game")
+let burger = document.querySelector(".burger");
+let menu = document.querySelector(".menu");
+let home = document.querySelector(".home-section");
+let startBtn = document.getElementById("start-btn");
+let homeBtn = document.getElementById("home-btn");
+let difficultyBtn = document.getElementById("difficulty-btn");
+let howToBtn = document.getElementById("how-to-btn");
+let difficultyMenu = document.querySelector(".difficulty");
+let easyBtn = document.getElementById("easy-btn");
+let mediumBtn = document.getElementById("medium-btn");
+let hardBtn = document.getElementById("hard-btn");
+let howToMenu = document.querySelector(".how-to");
+let quizGame = document.querySelector(".quiz-game");
 
-burger.addEventListener("click", showMenu)
-startBtn.addEventListener("click", runGame)
-homeBtn.addEventListener("click", showHome)
-difficultyBtn.addEventListener("click", showDifficultyMenu)
-howToBtn.addEventListener("click", showHowTo)
+burger.addEventListener("click", showMenu);
+startBtn.addEventListener("click", runGame);
+easyBtn.addEventListener("click", runGame);
+mediumBtn.addEventListener("click", runGame);
+hardBtn.addEventListener("click", runGame);
+homeBtn.addEventListener("click", showHome);
+difficultyBtn.addEventListener("click", showDifficultyMenu);
+howToBtn.addEventListener("click", showHowTo);
 
 // Easy quiz questions
 let easyQuestions = [
@@ -67,8 +73,8 @@ let easyQuestions = [
         question: "What makes up about 70 percent of most living things?",
         options: ["Protein", "Sugar", "Water", "Lead"],
         answer: "Water"
-    },
-]
+    }
+];
 
 // Medium quiz questions
 let mediumQuestions = [
@@ -121,8 +127,8 @@ let mediumQuestions = [
         question: "Who was the first person in space?",
         options: ["Yuri Gagarin", "Laika", "Neil Armstrong", "Valentina Tereshkova"],
         answer: "Yuri Gagarin"
-    },
-]
+    }
+];
 
 // Hard quiz questions
 let hardQuesions = [
@@ -175,8 +181,30 @@ let hardQuesions = [
         question: "About how many days does it take for the moon to pass through all phases?",
         options: ["28", "29", "30", "31"],
         answer: "29"
-    },
-]
+    }
+];
+
+/**
+ * When start button or one of the difficulty select buttons are clicked, 
+ * displays the quiz game and starts the quiz
+ */
+ function runGame(event) {
+    burger.classList.remove("change");
+    burger.classList.add("hide");
+    home.classList.add("hide");
+    difficultyMenu.classList.add("hide");
+    quizGame.classList.remove("hide");
+    let difficulty = event.target.id;
+    if (difficulty === "start-btn" || "easy-btn") {
+        // Shuffle array source: https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
+        let shuffledEasy = easyQuestions.sort(() => 0.5 - Math.random());
+    }
+    displayQuestion();
+}
+
+function displayQuestion() {
+   
+}
 
 /**
  * When menu burger icon is clicked, icon will change to a cross
@@ -194,18 +222,6 @@ function showMenu() {
         difficultyMenu.classList.add("hide");
         howToMenu.classList.add("hide");
     }
-}
-
-/**
- * When start button or one of the difficulty select buttons are clicked, 
- * displays the quiz game and starts the quiz
- */
-function runGame() {
-    burger.classList.remove("change");
-    burger.classList.add("hide");
-    home.classList.add("hide");
-    difficultyMenu.classList.add("hide");
-    quizGame.classList.remove("hide");
 }
 
 /**
