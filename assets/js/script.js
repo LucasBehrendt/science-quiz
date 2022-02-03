@@ -18,6 +18,7 @@ let answerBtn1 = document.getElementById("answer-btn-1");
 let answerBtn2 = document.getElementById("answer-btn-2");
 let answerBtn3 = document.getElementById("answer-btn-3");
 let answerBtn4 = document.getElementById("answer-btn-4");
+let answerBtns = document.querySelectorAll(".answer-btn")
 let nextQuestionBtn = document.getElementById("next-question")
 let currentQuestion = 0;
 let shuffledQuestions = 0;
@@ -246,9 +247,16 @@ function displayQuestion() {
  */
 function checkAnswer() {
     if (this.innerHTML === shuffledQuestions[0].answer) {
-        // alert('correct');
-        incrementScore()
-        this.classList.add("correct")
+        incrementScore();
+        this.classList.add("correct");
+        this.style.pointerEvents = "none";
+    } else {
+        this.classList.add("wrong");
+        this.style.pointerEvents = "none";
+    }
+    nextQuestionBtn.classList.remove("hide")
+    for (let i = 0; i < answerBtns.length; i++) {
+        answerBtns[i].disabled = true;
     }
 }
 
