@@ -20,6 +20,8 @@ let answerBtn3 = document.getElementById("answer-btn-3");
 let answerBtn4 = document.getElementById("answer-btn-4");
 let answerBtns = document.querySelectorAll(".answer-btn")
 let nextQuestionBtn = document.getElementById("next-question")
+let currentCount = document.getElementById("current-count")
+let incrementCount = 1;
 let currentQuestion = 0;
 let shuffledQuestions = 0;
 
@@ -224,13 +226,13 @@ let hardQuestions = [
  * Displays the questions and options on the quiz page
  */
 function displayQuestion() {
-    if (currentQuestion <= 10) {
+    if (currentQuestion < 10) {
         for (let i = 0; i < shuffledQuestions.length; i++) {
-            questionText.innerHTML = shuffledQuestions[0].question;
-            answerBtn1.innerHTML = shuffledQuestions[0].options[0];
-            answerBtn2.innerHTML = shuffledQuestions[0].options[1];
-            answerBtn3.innerHTML = shuffledQuestions[0].options[2];
-            answerBtn4.innerHTML = shuffledQuestions[0].options[3];
+            questionText.innerHTML = shuffledQuestions[currentQuestion].question;
+            answerBtn1.innerHTML = shuffledQuestions[currentQuestion].options[0];
+            answerBtn2.innerHTML = shuffledQuestions[currentQuestion].options[1];
+            answerBtn3.innerHTML = shuffledQuestions[currentQuestion].options[2];
+            answerBtn4.innerHTML = shuffledQuestions[currentQuestion].options[3];
             answerBtn1.addEventListener("click", checkAnswer);
             answerBtn2.addEventListener("click", checkAnswer);
             answerBtn3.addEventListener("click", checkAnswer);
@@ -242,11 +244,12 @@ function displayQuestion() {
     }
 }
 
+// How to "unhover" buttons: https://www.quora.com/How-to-unhover-an-element-with-an-active-hover-with-JS
 /**
  * When the player clicks an option, checks to see if the correct answer was clicked
  */
 function checkAnswer() {
-    if (this.innerHTML === shuffledQuestions[0].answer) {
+    if (this.innerHTML === shuffledQuestions[currentQuestion].answer) {
         incrementScore();
         this.classList.add("correct");
         this.style.pointerEvents = "none";
@@ -254,10 +257,11 @@ function checkAnswer() {
         this.classList.add("wrong");
         this.style.pointerEvents = "none";
     }
-    nextQuestionBtn.classList.remove("hide")
     for (let i = 0; i < answerBtns.length; i++) {
         answerBtns[i].disabled = true;
     }
+    nextQuestionBtn.classList.remove("hide");
+    nextQuestionBtn.addEventListener("click", nextQuestion);
 }
 
 /**
@@ -267,6 +271,22 @@ function incrementScore() {
     let lastScore = document.getElementById("score-count").innerHTML;
     document.getElementById("score-count").innerHTML = ++lastScore;
 }
+
+/**
+ * Loads the next question when "next question" button is clicked
+ */
+function nextQuestion() {
+    incrementCount++;
+    currentCount.innerHTML = incrementCount;
+    currentQuestion++;
+    for (let i = 0; i < answerBtns.length; i++) {
+        answerBtns[i].disabled = false;
+        answerBtns[i].style.pointerEvents = "auto";
+        answerBtns[i].classList.remove("correct")
+        answerBtns[i].classList.remove("wrong")
+    }
+    displayQuestion()
+} 
 
 /**
  * When menu burger icon is clicked, icon will change to a cross
