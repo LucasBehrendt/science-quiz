@@ -12,7 +12,7 @@ let mediumBtn = document.getElementById("medium-btn");
 let hardBtn = document.getElementById("hard-btn");
 let howToMenu = document.querySelector(".how-to");
 let quizGame = document.querySelector(".quiz-game");
-let homeIcon = document.getElementById("home-icon")
+let homeIcon = document.querySelectorAll(".home-icon")
 let questionText = document.getElementById("question-text")
 let answerBtn1 = document.getElementById("answer-btn-1");
 let answerBtn2 = document.getElementById("answer-btn-2");
@@ -20,6 +20,7 @@ let answerBtn3 = document.getElementById("answer-btn-3");
 let answerBtn4 = document.getElementById("answer-btn-4");
 let answerBtns = document.querySelectorAll(".answer-btn")
 let nextQuestionBtn = document.getElementById("next-question")
+let result = document.querySelector(".result")
 let currentCount = document.getElementById("current-count")
 let incrementCount = 1;
 let currentQuestion = 0;
@@ -30,7 +31,6 @@ startBtn.addEventListener("click", runGame);
 easyBtn.addEventListener("click", runGame);
 mediumBtn.addEventListener("click", runGame);
 hardBtn.addEventListener("click", runGame);
-homeIcon.addEventListener("click", reload)
 homeBtn.addEventListener("click", showHome);
 difficultyBtn.addEventListener("click", showDifficultyMenu);
 howToBtn.addEventListener("click", showHowTo);
@@ -198,6 +198,11 @@ let hardQuestions = [
     }
 ];
 
+// Iterate through the home icons & add event listener to reload the page
+for (let i = 0; i < homeIcon.length; i++) {
+    homeIcon[i].addEventListener("click", reload);
+}
+
 // Shuffle array source: https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
 /**
  * When start button or one of the difficulty select buttons are clicked, 
@@ -306,6 +311,7 @@ function showMenu() {
         home.classList.add("hide");
         difficultyMenu.classList.add("hide");
         howToMenu.classList.add("hide");
+        result.classList.add("hide");
     }
 }
 

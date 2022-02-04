@@ -104,7 +104,7 @@ button:hover {
 
 /* Quiz game section */
 
-#home-icon {
+.home-icon {
     position: absolute;
     font-size: 200%;
     top: 3%;
@@ -142,7 +142,6 @@ button:hover {
 }
 
 /* Display grid source: https://www.w3schools.com/css/css_grid.asp */
-
 #answer-options {
     display: grid;
     grid-gap: 75px 200px;
