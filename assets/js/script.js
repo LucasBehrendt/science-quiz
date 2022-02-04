@@ -252,13 +252,15 @@ function checkAnswer() {
     if (this.innerHTML === shuffledQuestions[currentQuestion].answer) {
         incrementScore();
         this.classList.add("correct");
-        this.style.pointerEvents = "none";
     } else {
         this.classList.add("wrong");
-        this.style.pointerEvents = "none";
     }
     for (let i = 0; i < answerBtns.length; i++) {
         answerBtns[i].disabled = true;
+        answerBtns[i].style.pointerEvents = "none";
+        if (answerBtns[i].innerHTML === shuffledQuestions[currentQuestion].answer) {
+            answerBtns[i].classList.add("correct");
+        }
     }
     nextQuestionBtn.classList.remove("hide");
     nextQuestionBtn.addEventListener("click", nextQuestion);
@@ -276,6 +278,7 @@ function incrementScore() {
  * Loads the next question when "next question" button is clicked
  */
 function nextQuestion() {
+    nextQuestionBtn.classList.add("hide");
     incrementCount++;
     currentCount.innerHTML = incrementCount;
     currentQuestion++;
