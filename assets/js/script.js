@@ -21,6 +21,7 @@ let answerBtn4 = document.getElementById("answer-btn-4");
 let answerBtns = document.querySelectorAll(".answer-btn")
 let nextQuestionBtn = document.getElementById("next-question")
 let result = document.querySelector(".result")
+let playAgain = document.getElementById("play-again")
 let currentCount = document.getElementById("current-count")
 let incrementCount = 1;
 let currentQuestion = 0;
@@ -34,6 +35,7 @@ hardBtn.addEventListener("click", runGame);
 homeBtn.addEventListener("click", showHome);
 difficultyBtn.addEventListener("click", showDifficultyMenu);
 howToBtn.addEventListener("click", showHowTo);
+playAgain.addEventListener("click", reload);
 
 // All quiz questions taken from https://www.triviawell.com/questions/science
 // Easy quiz questions

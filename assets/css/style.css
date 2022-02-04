@@ -159,6 +159,22 @@ button:hover {
     transform: translate(-50%, -50%);
 }
 
+/* Results section */
+
+.result h2 {
+    margin: 75px 0 120px;
+    font-size: 250%;
+}
+
+.result p {
+    font-size: 200%;
+    letter-spacing: 1px;
+}
+
+.result button {
+    margin-top: 120px;
+}
+
 /* Menu section */
 
 .menu button {
