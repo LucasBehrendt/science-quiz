@@ -12,17 +12,19 @@ let mediumBtn = document.getElementById("medium-btn");
 let hardBtn = document.getElementById("hard-btn");
 let howToMenu = document.querySelector(".how-to");
 let quizGame = document.querySelector(".quiz-game");
-let homeIcon = document.querySelectorAll(".home-icon")
-let questionText = document.getElementById("question-text")
+let homeIcon = document.querySelectorAll(".home-icon");
+let questionText = document.getElementById("question-text");
 let answerBtn1 = document.getElementById("answer-btn-1");
 let answerBtn2 = document.getElementById("answer-btn-2");
 let answerBtn3 = document.getElementById("answer-btn-3");
 let answerBtn4 = document.getElementById("answer-btn-4");
-let answerBtns = document.querySelectorAll(".answer-btn")
-let nextQuestionBtn = document.getElementById("next-question")
-let result = document.querySelector(".result")
-let playAgain = document.getElementById("play-again")
-let currentCount = document.getElementById("current-count")
+let answerBtns = document.querySelectorAll(".answer-btn");
+let nextQuestionBtn = document.getElementById("next-question");
+let result = document.querySelector(".result");
+let playAgain = document.getElementById("play-again");
+let currentCount = document.getElementById("current-count");
+let resultText = document.getElementById("result-text");
+let lastScore = document.getElementById("score-count").innerHTML;
 let incrementCount = 1;
 let currentQuestion = 0;
 let shuffledQuestions = 0;
@@ -248,6 +250,18 @@ function displayQuestion() {
     } else {
         quizGame.classList.add("hide");
         result.classList.remove("hide");
+        if (lastScore == 0) {
+            resultText.innerHTML = `You answered ${lastScore} questions correct. I bet you can do better! Click "Play Again" to (hopefully) improve your score.`;
+        } else if (lastScore <= 3) {
+            resultText.innerHTML = `You answered ${lastScore} questions correct. Not terrible, but not very good... Click "Play Again" to try and get a better score.`;
+        } else if (lastScore <= 6) {
+            resultText.innerHTML = `You answered ${lastScore} questions correct. Good job! There is still room for improvement though... Click "Play Again" to try and get a better score.`;
+        } else if (lastScore <= 9) {
+            resultText.innerHTML = `You answered ${lastScore} questions correct. Nice! That was impressive, but not quite perfect. Click "Play Again" to try and get that perfect 10!`;
+        } else {
+            resultText.innerHTML = `You answered ${lastScore} questions correct. Wow, you are truly a science master! Click "Play Again" and perhaps try another difficulty? 
+            You can find the difficulty selection from the menu.`;
+        }
     }
 }
 
@@ -277,7 +291,6 @@ function checkAnswer() {
  * Increments the score when a correct answer is submitted
  */
 function incrementScore() {
-    let lastScore = document.getElementById("score-count").innerHTML;
     document.getElementById("score-count").innerHTML = ++lastScore;
 }
 
@@ -313,7 +326,6 @@ function showMenu() {
         home.classList.add("hide");
         difficultyMenu.classList.add("hide");
         howToMenu.classList.add("hide");
-        result.classList.add("hide");
     }
 }
 

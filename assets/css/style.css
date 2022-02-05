@@ -169,10 +169,16 @@ button:hover {
 .result p {
     font-size: 200%;
     letter-spacing: 1px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 35px;
 }
 
 .result button {
-    margin-top: 120px;
+    position: absolute;
+    left: 50%;
+    top: 83%;
+    transform: translate(-50%, -50%);
 }
 
 /* Menu section */
