@@ -1,4 +1,4 @@
-// Get variables & add event listeners
+// Get global variables & add event listeners.
 let burger = document.querySelector(".burger");
 let menu = document.querySelector(".menu");
 let home = document.querySelector(".home-section");
@@ -202,7 +202,7 @@ let hardQuestions = [
     }
 ];
 
-// Iterate through the home icons & add event listener to reload the page
+// Iterate through the home icons & add event listener to reload the page.
 for (let i = 0; i < homeIcon.length; i++) {
     homeIcon[i].addEventListener("click", reload);
 }
@@ -210,7 +210,8 @@ for (let i = 0; i < homeIcon.length; i++) {
 // Shuffle array source: https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj
 /**
  * When start button or one of the difficulty select buttons are clicked, 
- * displays the quiz game and starts the quiz
+ * hides the start / menu page,
+ * displays the quiz game and starts the quiz.
  */
  function runGame(event) {
     burger.classList.remove("change");
@@ -232,7 +233,9 @@ for (let i = 0; i < homeIcon.length; i++) {
 }
 
 /**
- * Displays the questions and options on the quiz page
+ * Displays the questions and options on the quiz page if the question count is below 10,
+ * otherwise hides the quiz page and displays the results page.
+ * User score is presented and one of five messages is displayed, depending on the score.
  */
 function displayQuestion() {
     if (currentQuestion < 10) {
@@ -265,9 +268,12 @@ function displayQuestion() {
     }
 }
 
-// How to "unhover" buttons: https://www.quora.com/How-to-unhover-an-element-with-an-active-hover-with-JS
+// How to "unhover" buttons source: https://www.quora.com/How-to-unhover-an-element-with-an-active-hover-with-JS
 /**
- * When the player clicks an option, checks to see if the correct answer was clicked
+ * When the player clicks an option, checks to see if the correct answer was clicked.
+ * The buttons are disabled to prevent clicking the buttons more than once, and the hover style is removed.
+ * A background colour is added to the clicked button to reflect a correct/wrong answer.
+ * If answer is incorrect, the correct answer also recieves the "correct" background colour to reveal the correct answer.
  */
 function checkAnswer() {
     if (this.innerHTML === shuffledQuestions[currentQuestion].answer) {
@@ -288,14 +294,16 @@ function checkAnswer() {
 }
 
 /**
- * Increments the score when a correct answer is submitted
+ * Increments the score when a correct answer is submitted.
  */
 function incrementScore() {
     document.getElementById("score-count").innerHTML = ++lastScore;
 }
 
 /**
- * Loads the next question when "next question" button is clicked
+ * Loads the next question & increment the question count when "next question" button is clicked.
+ * The button is then hidden until the user has answered the question.
+ * The options buttons are enabled and the "correct/wrong" background colours are removed.
  */
 function nextQuestion() {
     nextQuestionBtn.classList.add("hide");
@@ -312,8 +320,8 @@ function nextQuestion() {
 } 
 
 /**
- * When menu burger icon is clicked, icon will change to a cross
- * and the menu will be displayed
+ * When the burger icon is clicked it will change to a cross & the menu will be displayed.
+ * All other pages will be hidden.
  */
 function showMenu() {
     if (burger.classList.contains("change")) {
@@ -330,7 +338,7 @@ function showMenu() {
 }
 
 /**
- * When home button in menu is clicked, displays the home section
+ * When home button in menu is clicked, displays the home page & hides the menu.
  */
  function showHome() {
     burger.classList.remove("change");
@@ -339,7 +347,7 @@ function showMenu() {
 }
 
 /**
- * When difficulty button in menu is clicked, displays the difficulty section
+ * When difficulty button in menu is clicked, displays the difficulty page & hides the menu.
  */
 function showDifficultyMenu() {
     burger.classList.remove("change");
@@ -348,7 +356,7 @@ function showDifficultyMenu() {
 }
 
 /**
- * When how to play button in menu is clicked, displays the how to play section
+ * When how to play button in menu is clicked, displays the how to play page & hides the menu.
  */
  function showHowTo() {
     burger.classList.remove("change");
