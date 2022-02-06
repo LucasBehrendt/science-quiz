@@ -262,8 +262,7 @@ function displayQuestion() {
         } else if (lastScore <= 9) {
             resultText.innerHTML = `You answered ${lastScore} questions correct. Nice! That was impressive, but not quite perfect. Click "Play Again" to try and get that perfect 10!`;
         } else {
-            resultText.innerHTML = `You answered ${lastScore} questions correct. Wow, you are truly a science master! Click "Play Again" and perhaps try another difficulty? 
-            You can find the difficulty selection from the menu.`;
+            resultText.innerHTML = `You answered ${lastScore} questions correct. Wow, you are truly a science master! Click "Play Again" and perhaps try another difficulty?`;
         }
     }
 }

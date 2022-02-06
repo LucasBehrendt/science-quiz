@@ -83,7 +83,8 @@ html {
 
 #welcome-text {
     font-size: 200%;
-    margin: 75px 0 125px;
+    margin: 75px 0 100px;
+    line-height: 35px;
 }
 
 button {
@@ -241,7 +242,8 @@ button {
     /* Home welcome page */
 
     #welcome-text {
-        margin: 75px 0;
+        margin: 50px 0 75px;
+        font-size: 150%;
     }
 
     /* Quiz game section */
@@ -255,7 +257,7 @@ button {
         top: 53%;
     }
 
-    #next-questions {
+    #next-question {
         top: 86%;
     }
 
@@ -312,11 +314,6 @@ button {
         margin-top: 100px;
     }
 
-    #welcome-text {
-        font-size: 150%;
-        margin: 75px 0 125px;
-    }
-
     button {
         height: 50px;
         font-size: 150%;
@@ -366,6 +363,10 @@ button {
     .result p {
         max-width: 300px;
         font-size: 150%;
+    }
+
+    .result button {
+        top: 78%;
     }
 
     /* Menu section */
