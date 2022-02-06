@@ -96,12 +96,6 @@ button {
     line-height: 25px;
 }
 
-button:hover {
-    background-color: #fbfeff;
-    color: #021025;
-    cursor: pointer;
-}
-
 /* Quiz game section */
 
 .home-icon {
@@ -221,6 +215,17 @@ button:hover {
 }
 
 /* Media Queries */
+
+/* Media query for hover effect only on desktop & laptop */
+
+@media screen and (min-width:1000px) {
+
+    button:hover {
+        background-color: #fbfeff;
+        color: #021025;
+        cursor: pointer;
+    }
+}
 
 /* For media screens 1000px wide and down */
 
