@@ -286,3 +286,112 @@ button {
         margin-top: 20px;
     }
 }
+
+/* For media screens 700px wide and down */
+
+@media screen and (max-width:700px) {
+
+    /* Game wrapper */
+
+    #game-wrapper {
+        width: 320px;
+        height: 570px;
+    }
+
+    /* Burger icon */
+
+    .burger {
+        right: 5%;
+        top: 2%;
+    }
+
+    /* Home welcome page */
+
+    #welcome-title {
+        font-size: 200%;
+        margin-top: 100px;
+    }
+
+    #welcome-text {
+        font-size: 150%;
+        margin: 75px 0 125px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 150%;
+    }
+
+    /* Quiz game section */
+
+    .home-icon {
+        font-size: 150%;
+        top: 2%;
+        left: 4%;
+    }
+
+    #question-count {
+        font-size: 150%;
+    }
+
+    #score {
+        font-size: 150%;
+        top: 2%;
+        left: 73%;
+    }
+
+    #question-text {
+        margin: 60px 10px;
+        font-size: 150%;
+    }
+
+    #answer-options {
+        display: block;
+    }
+    
+    #answer-options button {
+        margin: 10px;
+    }
+
+    #next-question {
+        top: 91%;
+    }
+
+    /* Results section */
+
+    .result h2 {
+        font-size: 200%;
+    }
+
+    .result p {
+        max-width: 300px;
+        font-size: 150%;
+    }
+
+    /* Menu section */
+
+    .menu button:nth-child(1) {
+        margin-top: 135px;
+    }
+
+    .menu button {
+        margin: 75px auto;
+    }
+
+    /* Difficulty selection section */
+
+    .difficulty h1 {
+        margin-top: 75px;
+    }
+
+    .difficulty button:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    /* How to play section */
+
+    .how-to p {
+        max-width: 280px;
+        text-align: justify;
+    }
+}
