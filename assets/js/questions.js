@@ -1,6 +1,6 @@
 // All quiz questions taken from https://www.triviawell.com/questions/science
 // Easy quiz questions
-let easyQuestions = [
+const easyQuestions = [
     {
         question: "At what temperature does water first boil?",
         options: ["-100°C", "100°C", "0°C", "1000°C"],
@@ -54,7 +54,7 @@ let easyQuestions = [
 ];
 
 // Medium quiz questions
-let mediumQuestions = [
+const mediumQuestions = [
     {
         question: "Which company manufactures Pentium chipsets?",
         options: ["AMD", "Microsoft", "Intel", "Apple"],
@@ -108,7 +108,7 @@ let mediumQuestions = [
 ];
 
 // Hard quiz questions
-let hardQuestions = [
+const hardQuestions = [
     {
         question: "What is the name for the Sun's outer-most atmosphere?",
         options: ["Stratosphere", "Corona", "Photosphere", "Chromosphere"],
