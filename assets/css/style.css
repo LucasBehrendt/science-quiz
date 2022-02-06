@@ -219,3 +219,65 @@ button:hover {
     line-height: 25px;
     text-align: left;
 }
+
+/* Media Queries */
+
+/* For media screens 1000px wide and down */
+
+@media screen and (max-width:1000px) {
+
+    /* Game wrapper */
+
+    #game-wrapper {
+        width: 650px;
+        height: 500px;
+    }
+
+    /* Home welcome page */
+
+    #welcome-text {
+        margin: 75px 0;
+    }
+
+    /* Quiz game section */
+
+    #score {
+        left: 83%;
+    }
+
+    #answer-options {
+        grid-gap: 40px 100px;
+        top: 53%;
+    }
+
+    #next-questions {
+        top: 86%;
+    }
+
+    /* Results section */
+
+    .result h2 {
+        margin: 75px 0;
+    }
+
+    .result p {
+        max-width: 600px;
+        line-height: 25px;
+    }
+
+    /* Menu section */
+
+    .menu button:nth-child(1) {
+        margin-top: 85px;
+    }
+
+    /* Difficulty selection section */
+
+    .difficulty h1 {
+        margin-top: 60px;
+    }
+
+    .difficulty button:nth-child(2) {
+        margin-top: 20px;
+    }
+}
