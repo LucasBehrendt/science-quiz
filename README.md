@@ -8,10 +8,19 @@ Science Quiz is an interactive quiz game that aims to entertain users with a fun
 
 ## User Experience (UX) 
 ### Site Owner Goals
-### User Stories
--	#### First Time User
--	#### Returning User
--	#### Frequent User
+
+- Provide an entertaining and challenging quiz game that users enjoy.
+- Present a well designed, structured website with clear purpose and navigation.
+- Leave the user with a sense of accomplishment and some new knowledge.
+
+### User Goals
+
+- Understand the purpose of the game instantly.
+- Have a positive feeling from the design and structure of the website.
+- Test my knowledge in a fun and reasonably time consuming game.
+- Easily navigate the site and be able to choose different difficulty levels.
+- Receive feedback on my score and be able to easily play again.
+
 ### Stucture
 ### Design
 -   #### Colours
