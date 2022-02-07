@@ -149,10 +149,10 @@ function nextQuestion() {
     for (let i = 0; i < answerBtns.length; i++) {
         answerBtns[i].disabled = false;
         answerBtns[i].style.pointerEvents = "auto";
-        answerBtns[i].classList.remove("correct")
-        answerBtns[i].classList.remove("wrong")
+        answerBtns[i].classList.remove("correct");
+        answerBtns[i].classList.remove("wrong");
     }
-    displayQuestion()
+    displayQuestion();
 } 
 
 /**
@@ -204,5 +204,5 @@ function showDifficultyMenu() {
  * Reloads the site
  */
  function reload() {
-    window.location.reload()
+    window.location.reload();
 }
