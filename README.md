@@ -1,8 +1,10 @@
 # Science Quiz
 
-Description with link to site
+Science Quiz is an interactive quiz game that aims to entertain users with a fun and challenging quiz. It consists of three different difficulty levels, with Easy as the default difficulty. Simply click "Start Quiz" on the home page for a quick way straight into the game. Science Quiz offers a fun way to test your knowledge, as well as learn new and interesting facts in the field of science.
 
-AmIResponsive Image
+[Find the live website here!](https://lucasbehrendt.github.io/science-quiz/)
+
+![Responsive Image](docs/images/responsive.png)
 
 ## User Experience (UX) 
 ### Site Owner Goals
@@ -12,9 +14,9 @@ AmIResponsive Image
 -	#### Frequent User
 ### Stucture
 ### Design
-–	#### Colours
-–	#### Typography
-–	#### Imagery
+-   #### Colours
+-	#### Typography
+-	#### Imagery
 
 ## Wireframes
 
