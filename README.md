@@ -21,7 +21,10 @@ Science Quiz is an interactive quiz game that aims to entertain users with a fun
 - Easily navigate the site and be able to choose different difficulty levels.
 - Receive feedback on my score and be able to easily play again.
 
-### Stucture
+### Structure
+
+The structure of the website is designed to be simple, but professional looking. Users should be able to intuitively navigate the site with the burger icon, and all sections of the site are easily accessible. Users are greeted on the home page with a quick way to start the quiz, or the option to navigate the menu. From the menu the user can either select a difficulty setting, visit the "How To Play" page, or go back to the home page. The quiz game is structured in a logical and recognizable way. Feedback is given on all user interactions, such as navigating the menu, hovering over buttons, or answering quiz questions, to keep the user engaged. When all questions are answered, the user is presented with the result. A message that reflects the score is displayed, and a "Play Again" button takes the user back to the home page.
+
 ### Design
 -   #### Colours
 -	#### Typography
