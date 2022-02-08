@@ -49,6 +49,7 @@ for (let i = 0; i < homeIcon.length; i++) {
  * When start button or one of the difficulty select buttons are clicked, 
  * hides the start / menu page,
  * displays the quiz game and starts the quiz.
+ * @param {click} event - passes the difficulty value to the function
  */
  function runGame(event) {
     burger.classList.remove("change");

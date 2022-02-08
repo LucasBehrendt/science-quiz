@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,78 +15,82 @@
 
     <title>Science Quiz</title>
 </head>
+
 <body>
-    <!-- Game wrapper -->
-    <div id="game-wrapper">
-        <!-- code for burger icon taken from https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
-        <!-- Burger menu -->
-        <div class="burger">
-            <div class="burger-line-1"></div>
-            <div class="burger-line-2"></div>
-            <div class="burger-line-3"></div>
-        </div>
-        <!-- Home welcome page -->
-        <section class="home-section">
-            <h1 id="welcome-title">Welcome to Science Quiz!</h1>
-            <br>
-            <h2 id="welcome-text">
-                Click the Start button below to start the game in easy mode, 
-                <br>or choose a different difficulty from the menu.
-            </h2>
-            <button aria-label="Start the game" id="start-btn">Start Quiz</button>
-        </section>
-        <!-- Quiz game page -->
-        <section class="quiz-game hide">
-            <div aria-label="Return to home page" class="home-icon"><i class="fas fa-home"></i></div>
-            <div id="question-count"><span id="current-count">1</span>/10</div>
-            <div id="score">Score: <span id="score-count">0</span></div>
-            <div id="question-text"></div>
-            <div id="answer-options">
-                <button aria-label="Button for option 1" class="answer-btn" id="answer-btn-1"></button>
-                <button aria-label="Button for option 2" class="answer-btn" id="answer-btn-2"></button>
-                <button aria-label="Button for option 3" class="answer-btn" id="answer-btn-3"></button>
-                <button aria-label="Button for option 4" class="answer-btn" id="answer-btn-4"></button>
+    <main>
+        <!-- Game wrapper -->
+        <div id="game-wrapper">
+            <!-- code for burger icon taken from https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
+            <!-- Burger menu -->
+            <header class="burger">
+                <div class="burger-line-1"></div>
+                <div class="burger-line-2"></div>
+                <div class="burger-line-3"></div>
+            </header>
+            <!-- Home welcome page -->
+            <div class="home-section">
+                <h1 id="welcome-title">Welcome to Science Quiz!</h1>
+                <br>
+                <h2 id="welcome-text">
+                    Click the Start button below to start the game in easy mode,
+                    <br>or choose a different difficulty from the menu.
+                </h2>
+                <button aria-label="Start the game" id="start-btn">Start Quiz</button>
             </div>
-            <button aria-label="Move on to the next question" id="next-question" class="hide">Next Question</button>
-        </section>
-        <!-- Results page -->
-        <section class="result hide">
-            <div aria-label="Return to home page" class="home-icon"><i class="fas fa-home"></i></div>
-            <h2>Results</h2>
-            <p id="result-text"></p>
-            <button aria-label="Back to home page" id="play-again">Play Again</button>
-        </section>
-        <!-- Menu page -->
-        <section class="menu hide">
-            <button aria-label="Back to home page" id="home-btn">Home</button>
-            <button aria-label="Change the difficulty" id="difficulty-btn">Difficulty</button>
-            <button aria-label="Instructions on how to play the game" id="how-to-btn">How to Play</button>
-        </section>
-        <!-- Difficulty page -->
-        <section class="difficulty hide">
-            <h1>Please select a difficulty (easy is default)</h1>
-            <button aria-label="Select easy difficulty setting" id="easy-btn">Easy</button>
-            <button aria-label="Select medium difficulty setting" id="medium-btn">Medium</button>
-            <button aria-label="Select hard difficulty setting" id="hard-btn">Hard</button>
-        </section>
-        <!-- How to play page -->
-        <section class="how-to hide">
-            <h1>How To Play</h1>
-            <p>
-                The quiz is quite straightforward. 
-                Simply click the "Start Quiz" button on the home page to start in the default "Easy" difficulty setting, 
-                or navigate to the difficulty page to select a different difficulty and start the quiz directly.
-            </p>
-            <p>
-                Each range of difficulty contains 10 fun and challenging questions about science, 
-                which will surely add some new and fun trivia to your knowledge!
-            </p>
-        </section>
-    </div>
+            <!-- Quiz game page -->
+            <div class="quiz-game hide">
+                <a aria-label="Return to home page" class="home-icon"><i class="fas fa-home"></i></a>
+                <div id="question-count"><span id="current-count">1</span>/10</div>
+                <div id="score">Score: <span id="score-count">0</span></div>
+                <div id="question-text"></div>
+                <div id="answer-options">
+                    <button aria-label="Button for option 1" class="answer-btn" id="answer-btn-1"></button>
+                    <button aria-label="Button for option 2" class="answer-btn" id="answer-btn-2"></button>
+                    <button aria-label="Button for option 3" class="answer-btn" id="answer-btn-3"></button>
+                    <button aria-label="Button for option 4" class="answer-btn" id="answer-btn-4"></button>
+                </div>
+                <button aria-label="Move on to the next question" id="next-question" class="hide">Next Question</button>
+            </div>
+            <!-- Results page -->
+            <div class="result hide">
+                <a aria-label="Return to home page" class="home-icon"><i class="fas fa-home"></i></a>
+                <h2>Results</h2>
+                <p id="result-text"></p>
+                <button aria-label="Back to home page" id="play-again">Play Again</button>
+            </div>
+            <!-- Menu page -->
+            <div class="menu hide">
+                <button aria-label="Back to home page" id="home-btn">Home</button>
+                <button aria-label="Change the difficulty" id="difficulty-btn">Difficulty</button>
+                <button aria-label="Instructions on how to play the game" id="how-to-btn">How to Play</button>
+            </div>
+            <!-- Difficulty page -->
+            <div class="difficulty hide">
+                <h1>Please select a difficulty (easy is default)</h1>
+                <button aria-label="Select easy difficulty setting" id="easy-btn">Easy</button>
+                <button aria-label="Select medium difficulty setting" id="medium-btn">Medium</button>
+                <button aria-label="Select hard difficulty setting" id="hard-btn">Hard</button>
+            </div>
+            <!-- How to play page -->
+            <div class="how-to hide">
+                <h1>How To Play</h1>
+                <p>
+                    The quiz is quite straightforward.
+                    Simply click the "Start Quiz" button on the home page to start in the default "Easy" difficulty setting,
+                    or navigate to the difficulty page to select a different difficulty and start the quiz directly.
+                </p>
+                <p>
+                    Each range of difficulty contains 10 fun and challenging questions about science,
+                    which will surely add some new and fun trivia to your knowledge!
+                </p>
+            </div>
+        </div>
+    </main>
     <!-- Javascript -->
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- Font Awesome script -->
     <script src="https://kit.fontawesome.com/2e8745a8b6.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
