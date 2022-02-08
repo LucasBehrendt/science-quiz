@@ -40,6 +40,32 @@ The structure of the website is designed to be simple, but professional looking.
 
 ## Wireframes
 
+Wireframes were created using Balsamiq.
+
+<details>
+
+<summary>Desktop wireframes</summary>
+
+![Desktop wireframe start](docs/wireframes/Desktop-Start.png)
+![Desktop wireframe quiz](docs/wireframes/Desktop-Quiz.png)
+![Desktop wireframe menu](docs/wireframes/Desktop-Menu.png)
+![Desktop wireframe difficulty](docs/wireframes/Desktop-Difficulty.png)
+![Desktop wireframe how-to-play](docs/wireframes/Desktop-How-to-Play.png)
+
+</details>
+
+<details>
+
+<summary>Mobile wireframes</summary>
+
+![Mobile wireframe start](docs/wireframes/Mobile-Start.png)
+![Mobile wireframe quiz](docs/wireframes/Mobile-Quiz.png)
+![Mobile wireframe menu](docs/wireframes/Mobile-Menu.png)
+![Mobile wireframe difficulty](docs/wireframes/Mobile-Difficulty.png)
+![Mobile wireframe how-to-play](docs/wireframes/Mobile-How-to-Play.png)
+
+</details>
+
 ## Features
 ### Features Left to Implement
 
