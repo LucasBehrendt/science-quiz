@@ -67,6 +67,33 @@ Wireframes were created using Balsamiq.
 </details>
 
 ## Features
+
+In the following section I will provide an overview of the features on Science Quiz. The site consists of a single page with multiple sections, which are visible one at a time. The background image is visible throughout all pages, and the quiz game in the middle of the site holds all the different sections. All features have been made responsive across all devices. 
+
+### Home Page
+
+- The home page consists of a title that instantly shows the user the purpose of the site, and a message to clarify the next step to be taken by the user. There is a button at the bottom of the section labelled "Start Quiz" which if clicked, starts the quiz in the default easy mode, as stated by the message above the button. This page is designed to be inviting and simple, with a quick and easy path into the quiz itself.
+
+- On smaller screen sizes the layout remains the same, and the text elements are adapted to fit the section in a pleasing way. The button at the bottom is reduced in height to improve the layout.
+
+<details>
+
+<summary>Home Page image - Desktop</summary>
+
+![Home Page image - Desktop](docs/images/Desktop-home.png)
+
+</details>
+
+<details>
+
+<summary>Home Page image - Mobile</summary>
+
+![Home Page image - Mobile](docs/images/Mobile-home.png)
+
+</details>
+
+
+
 ### Features Left to Implement
 
 ## Testing
