@@ -114,7 +114,7 @@ In the following section I will provide an overview of the features included in 
 
 - As the user answers questions and the question counter reaches 10, the quiz game is completed and the results will be displayed.
 
-- On mobile devices the quiz page layout will be adjusted to fit the screen size better. The game bar and quiz question will remain the same, but the options and the next question button will change to a column.
+- On mobile devices the quiz page layout will be adjusted to fit the screen size better. The game bar and quiz question will remain the same, but the options and the next question button will change to a column. The buttons are reduced in height for a better fit.
 
 <details>
 
@@ -153,6 +153,50 @@ In the following section I will provide an overview of the features included in 
 <summary>Quiz Page image - Incorrect Answer</summary>
 
 ![Quiz Page image - Incorrect Answer](docs/images/Desktop-incorrect.png)
+
+</details>
+
+### Results Page
+
+- The results page will automatically be displayed when the user has answered all ten questions. The main purpose of this page is to give the user a sense of accomplishment, or an urge to try and get a better score so the user plays again. A message which depends on the score achieved by the user is displayed, and a "Play Again" button below the message encourages the user to try and achieve a better score or, if all questions were answered correctly, to try the quiz in a different difficulty setting.
+
+- The results page maintains the same layout on smaller screen sizes, with only some minor adjustments to the text elements. The button is reduced in height for a consistent responsiveness throughout the pages.  
+
+<details>
+
+<summary>Results Page image - Desktop</summary>
+
+![Results Page image - Desktop](docs/images/Desktop-results.png)
+
+</details>
+
+<details>
+
+<summary>Results Page image - Mobile</summary>
+
+![Results Page image - Mobile](docs/images/Mobile-results.png)
+
+</details>
+
+### Menu Page
+
+- The menu is a small navigation menu that adds to the overall experience, while maintaining a simple and elegant structure. By clicking the burger icon the user can access the menu and, from here, navigate to Home, Difficulty or How to Play. The Home button simply directs the user back to the home page, while the Difficulty and How to Play buttons takes the user to the corresponding pages, which will be described below this feature.
+
+- On smaller screen sizes the layout remains the same, and the buttons are slimmed in the same way as the other pages.
+
+<details>
+
+<summary>Menu Page image - Desktop</summary>
+
+![Results Page image - Desktop](docs/images/Desktop-menu.png)
+
+</details>
+
+<details>
+
+<summary>Menu Page image - Mobile</summary>
+
+![Results Page image - Mobile](docs/images/Mobile-menu.png)
 
 </details>
 
