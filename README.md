@@ -68,13 +68,25 @@ Wireframes were created using Balsamiq.
 
 ## Features
 
-In the following section I will provide an overview of the features on Science Quiz. The site consists of a single page with multiple sections, which are visible one at a time. The background image is visible throughout all pages, and the quiz game in the middle of the site holds all the different sections. All features have been made responsive across all devices. 
+In the following section I will provide an overview of the features included in Science Quiz. The site consists of a single html file with multiple pages, which are visible one at a time. The background image is visible throughout all pages, and the quiz game in the middle of the site holds all the different pages. All features have been made responsive across all devices.
+
+### Menu icon
+
+- The menu icon is a so called burger icon that users can utilize to navigate throughout the site. When clicked, the icon will animate into an X and the menu will appear. To close the menu, simply click the X and the home page will be displayed again. The menu itself will be covered further down this file.
+
+<details>
+
+<summary>Menu icon</summary>
+
+![Menu icon](docs/images/Menu-icon.png)
+
+</details>
 
 ### Home Page
 
-- The home page consists of a title that instantly shows the user the purpose of the site, and a message to clarify the next step to be taken by the user. There is a button at the bottom of the section labelled "Start Quiz" which if clicked, starts the quiz in the default easy mode, as stated by the message above the button. This page is designed to be inviting and simple, with a quick and easy path into the quiz itself.
+- The home page consists of a title that instantly shows the user the purpose of the site, and a message to clarify the next step to be taken by the user. There is a button at the bottom of the page labelled "Start Quiz" which if clicked, starts the quiz in the default easy mode, as stated by the message above the button. This page is designed to be inviting and simple, with a quick and easy path into the quiz itself.
 
-- On smaller screen sizes the layout remains the same, and the text elements are adapted to fit the section in a pleasing way. The button at the bottom is reduced in height to improve the layout.
+- On smaller screen sizes the layout remains the same, and the text elements are adapted to fit the page in a pleasing way. The button at the bottom is reduced in height to improve the layout.
 
 <details>
 
@@ -92,7 +104,57 @@ In the following section I will provide an overview of the features on Science Q
 
 </details>
 
+### Quiz Page
 
+- The quiz page is the heart of the site, and will be displayed when the user either clicks "Start Quiz" on the home page or chooses a difficulty from the menu. 
+
+- At the top of the page lies a game bar. At the left side of the game bar a home icon is found, which if clicked takes the user back to the home page. In the middle there is a question counter which increments with each question answered, and to the right in the game bar a score count can be found, which will keep track of the number of correct answers submitted by the user.
+
+- The current quiz question is displayed below the game bar, with four options presented as buttons in a 2x2 grid below the question. When a user answers a question, the result will be displayed in the form of the option clicked either turning green for a correct answer, or red for an incorrect answer. If answered incorrect, the correct answer will turn green as well, to help the user learn and hopefully be able to score better on a new try. When the current question has been answered a button that generates the next question will be displayed below the options, and the current options buttons are disabled so no cheating can occur.
+
+- As the user answers questions and the question counter reaches 10, the quiz game is completed and the results will be displayed.
+
+- On mobile devices the quiz page layout will be adjusted to fit the screen size better. The game bar and quiz question will remain the same, but the options and the next question button will change to a column.
+
+<details>
+
+<summary>Game Bar</summary>
+
+![Game Bar image](docs/images/Game-Bar.png)
+
+</details>
+
+<details>
+
+<summary>Quiz Page image - Desktop</summary>
+
+![Quiz Page image - Desktop](docs/images/Desktop-quiz.png)
+
+</details>
+
+<details>
+
+<summary>Quiz Page image - Mobile</summary>
+
+![Quiz Page image - Mobile](docs/images/Mobile-quiz.png)
+
+</details>
+
+<details>
+
+<summary>Quiz Page image - Correct Answer</summary>
+
+![Quiz Page image - Correct Answer](docs/images/Mobile-correct.png)
+
+</details>
+
+<details>
+
+<summary>Quiz Page image - Incorrect Answer</summary>
+
+![Quiz Page image - Incorrect Answer](docs/images/Desktop-incorrect.png)
+
+</details>
 
 ### Features Left to Implement
 
