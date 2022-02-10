@@ -23,7 +23,7 @@ Science Quiz is an interactive quiz game that aims to entertain users with a fun
 
 ### Structure
 
-The structure of the website is designed to be simple, but professional looking. Users should be able to intuitively navigate the site with the burger icon, and all sections of the site are easily accessible. Users are greeted on the home page with a quick way to start the quiz, or the option to navigate the menu. From the menu the user can either select a difficulty setting, visit the "How To Play" page, or go back to the home page. The quiz game is structured in a logical and recognizable way. Feedback is given on all user interactions, such as navigating the menu, hovering over buttons, or answering quiz questions, to keep the user engaged. When all questions are answered, the user is presented with the result. A message that reflects the score is displayed, and a "Play Again" button takes the user back to the home page.
+The structure of the website is designed to be simple, but professional looking. When designing the site, the decision to not use a conventional header or footer was deemed the most appropriate. This helps keep the site looking clean and slimmed, while also having a very appealing layout. Users should be able to intuitively navigate the site with the burger icon, and all sections of the site are easily accessible. Users are greeted on the home page with a quick way to start the quiz, or the option to navigate the menu. From the menu the user can either select a difficulty setting, visit the "How To Play" page, or go back to the home page. The quiz game is structured in a logical and recognizable way. Feedback is given on all user interactions, such as navigating the menu, hovering over buttons, or answering quiz questions, to keep the user engaged. When all questions are answered, the user is presented with the result. A message that reflects the score is displayed, and a "Play Again" button takes the user back to the home page.
 
 ### Design
 - #### Colours
@@ -246,9 +246,46 @@ In the following section I will provide an overview of the features included in 
 
 ### Features Left to Implement
 
+- A system that keeps highscores and incentivizes the user even more to try and beat their previous score.
+- A large database of quiz questions to allow the user to play the quiz multiple times without having to answer the same questions over and over.
+
 ## Testing
 ### Validator Testing
+
+- To ensure that all HTML code of the website is correct, validation through the W3C Markup Validator was performed and no errors were found in the HTML code. There was, however, some warnings that was fairly simple to solve.
+
+  - The home icon on the quiz page and results page has an Aria-label to improve accessibility. Since an icon element does not register as a link or button, a warning was issued that said "possible missuse of aria-label". After some searching for the best solution, this was solved by wrapping the icon in an anchor element and omitting the href attribute, since the icon was manipulated by JavaScript.
+
+  - The different pages in the website were initially sections, but this caused a warning which stated that "section lacks heading element". Since a heading element was not necessary in a few of the sections the best solution would simply be to replace the section elements with divs.
+
+  - After handling these warnings there are now no errors or warnings in the website.
+
+  - [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Flucasbehrendt.github.io%2Fscience-quiz%2F)
+
+- Validation of the CSS code was performed through the W3C CSS Validator. No errors or warnings were found in the process. WARNING??
+
+  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results]()
+
+- The JSHint Code Quality Tool was used to validate all JavaScript code. As the code for the website has two JavaScript files for better readability, they were copied and pasted together in JSHint and no errors were found. A few warnings, all related to a couple of missed semicolons, were quickly fixed.
+
+  - [JSHint Code Quality Tool](https://jshint.com/) 
+  
+    <details>
+  
+    <summary>Results</summary>
+  
+    ![JSHint](docs/images/JSHint.png)
+  
+    </details>
+
 ### Responsive Testing
+
+- You can open DevTools with keyboard shortcuts (CMD+Opt+I for Mac OS or Ctrl+Shift+I for Linux and Windows), through the menu bar in the top right corner and go to “More Tools” > “Developer Tools.” or by rightclicking on any web page and select "Inspect". To test responsiveness click on the "device" icon on the left side, above the source code window or with the keyboard shortcut CMD+Shift+M for Mac OS or Ctrl+Shift+M for Linux and Windows. Under 'Dimensions' you can choose between different devices to emulate, or you can drag the handles to resize the window to your preffered screen width by choosing 'Responsive'.
+
+- To test the responsiveness of the website multiple devices were used to play the quiz on including a Desktop, Laptop, Ipad Air, Samsung Galaxy S20, Iphone 12, Iphone X, Iphone 8 and Iphone SE(2016). The site was also tested on different browsers, such as Chrome, Edge, Safari and Firefox.
+
+- Using Chrome DevTools, the site was optimized for all screen widths down to 320px.
+
 ### Lighthouse Testing
 ### Links and Form Testing
 ### Fixed Bugs
