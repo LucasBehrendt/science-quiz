@@ -330,9 +330,88 @@ In the following section I will provide an overview of the features included in 
 
 ## Technologies Used
 ### Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+
+- [JavaScript](https://www.javascript.com/)
+
 ### Programs & Libraries
 
+- [Balsamiq](https://balsamiq.com/) - The wireframes used for the site was created with Balsamiq.
+
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - A powerful tool used throughout the creation of the website.
+
+- [Coolors](https://coolors.co/) - The colour palette was generated with the help of Coolors.
+
+- [Favicon](https://favicon.io/) - The favicon visible in the websites tab was taken from here.
+
+- [Font Awesome](https://fontawesome.com/) - The icons in the site was provided by Font Awesome.
+
+- [Git](https://git-scm.com/) - Git was used through the Gitpod terminal to commit to Git and push to Github.
+
+- [Github](https://github.com/) - All code for the site is stored on Github after being pushed from Git. Github Pages serves as host for the site.
+
+- [Google Fonts](https://fonts.google.com/) - The font used on the site was imported from Google Fonts.
+
+- [JSHint](https://jshint.com/) - Validation of JavaScript code was done with JSHint.
+
+- [Techsini](http://techsini.com/multi-mockup/index.php) - The responsive image at the top of the README came from Techsini.
+
+- [Triviawell](https://www.triviawell.com/) - All questions for the quiz was taken from Triviawell. 
+
+- [Unsplash](https://unsplash.com/) - The background image for the site was provided by Unsplash.
+
+- [W3C](https://www.w3.org/) - Validation of HTML and CSS code was done with W3C.
+
 ## Deployment
+### Github Pages
+
+The website was deployed using GitHub Pages. The steps for the deployment process are:
+
+1. Log in to your GitHub account.
+
+2. On the left side of the screen, choose the repository you wish to deploy.
+
+3. At the top of the repository, select "settings".
+
+4. In the navigation bar to the left, click the "Pages" section.
+
+5. Under 'Source', select the 'Main' branch and click 'Save'.
+
+6. The site should be live in a few minutes, indicated by a green background with the words " Your site is published at (live address)"
+
+The live link can be found here - [Science Quiz](https://lucasbehrendt.github.io/science-quiz/)
+
+### Cloning
+
+The repository for the website can be cloned to a local machine. The cloning procedure pulls down a full copy of all the data on GitHub.com at that time. The steps required for the clone are:
+
+1. Navigate to the main page of the repository you wish to clone.
+
+2. Above the list of files, click the "code" button.
+
+3. To clone the repository using HTTPS, under "clone with HTTPS", copy the URL provided.
+
+4. Open Git Bash.
+
+5. Change the current working directory to the location where you want the cloned directory.
+
+6. Type `git clone`, and then paste the URL you copied earlier.
+     ```
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
+    ```
+7. Press Enter to create your local clone.
+    ```
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    > Cloning into `Clone-dir`...
+    > remote: Counting objects: 10, done.
+    > remote: Compressing objects: 100% (8/8), done.
+    > remove: Total 10 (delta 1), reused 10 (delta 1)
+    > Unpacking objects: 100% (10/10), done.
+    ```
+For a more detailed explanation, see this [walkthrough](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
 ## Credits
 ### Code
