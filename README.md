@@ -287,9 +287,46 @@ In the following section I will provide an overview of the features included in 
 - Using Chrome DevTools, the site was optimized for all screen widths down to 320px.
 
 ### Lighthouse Testing
+
+- The Lighthouse tool in Chrome DevTools was used to test the sites performance, accessibility, best practices and SEO. The website performed well in the tests, indicating a well-structured site that is highly accessible.
+
+<details>
+  
+<summary>Lighthouse Report - Desktop</summary>
+  
+![Lighthouse Report - Desktop](docs/images/Desktop-lighthouse.png)
+  
+</details>
+
+<details>
+  
+<summary>Lighthouse Report - Mobile</summary>
+  
+![Lighthouse Report - Mobile](docs/images/Mobile-lighthouse.png)
+  
+</details>
+
 ### Links and Form Testing
+
+- All navigational links and buttons have been tested to ensure that no broken links exists and that the correct targets are reached. The menu is behaving correctly and the buttons to start the quiz are all responding as expected.
+
+- All buttons in the quiz game responds as expected and, when a question is answered, the buttons are disabled. If the home icon is clicked while the quiz is running, the page is refreshed and the user is taken to the home page. The "Next Question" button correctly iterates through the array of quiz questions until the maximum question count is reached. Both the question count and the score count increments as expected.
+
+- When all 10 questions are answered the results page is displayed as expected. Depending on the users score, the correct corresponding message is displayed. The "Play Again" button reloads the page as expected. The home icon behaves the same as on the quiz page.
+
 ### Fixed Bugs
+
+- When answering a quesion wrong, the button did not turn red instantly, but only after the cursor was moved slightly and not all options buttons had the hover function disabled. Instead of disabling the hover function in an if/else statement, all buttons are now looped through to disable them correctly. This also fixed the issue with the "wrong answer" button not turning red instantly on desktop and laptops.
+
+- When playing the quiz game on mobile devices the "wrong answer" colour issue persisted, and to solve this the hover effect on all buttons were removed on devices that utilize touchscreens. When using these devices the hover effect has no meaning anyway since most commonly a mouse is not used.
+
+- When clicking the "Next Question" button in the quiz game, a new question was not generated. The question count was incremented, but the same question was displayed. This was caused by an error in the function that calls the next question in the shuffled array. By examining the code the error was found in the loop to display the question, which was given the index[0] of the array. After changing this to a variable that increments with each "Next Question" button click, the solution was found.
+
 ### Known/Unfixed Bugs
+
+- Landscape mode ??
+
+- Menu reverts back to home ??
 
 ## Technologies Used
 ### Languages

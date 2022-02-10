@@ -176,7 +176,7 @@ button {
     line-height: 35px;
 }
 
-.result button {
+#play-again {
     position: absolute;
     left: 50%;
     top: 83%;
@@ -226,7 +226,7 @@ button {
 
 /* Media query for hover effect only on desktop & laptop */
 
-@media screen and (min-width:1000px) {
+@media (hover: hover) {
 
     button:hover {
         background-color: #fbfeff;
