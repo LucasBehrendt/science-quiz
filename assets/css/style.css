@@ -104,7 +104,14 @@ button {
     font-size: 200%;
     top: 3%;
     left: 2%;
-    cursor: pointer;
+    background-color: inherit;
+    width: auto;
+    height: auto;
+}
+
+.home-icon:hover {
+    background-color: inherit;
+    color: inherit;
 }
 
 #question-count {

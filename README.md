@@ -254,7 +254,7 @@ In the following section I will provide an overview of the features included in 
 
 - To ensure that all HTML code of the website is correct, validation through the W3C Markup Validator was performed and no errors were found in the HTML code. There was, however, some warnings that was fairly simple to solve.
 
-  - The home icon on the quiz page and results page has an Aria-label to improve accessibility. Since an icon element does not register as a link or button, a warning was issued that said "possible missuse of aria-label". After some searching for the best solution, this was solved by wrapping the icon in an anchor element and omitting the href attribute, since the icon was manipulated by JavaScript.
+  - The home icon on the quiz page and results page has an Aria-label to improve accessibility. Since an icon element does not register as a link or button, a warning was issued that said "possible missuse of aria-label". After some searching for the best solution, this was solved by wrapping the icon in a button element and styling it to maintain the same appearance.
 
   - The different pages in the website were initially sections, but this caused a warning which stated that "section lacks heading element". Since a heading element was not necessary in a few of the sections the best solution would simply be to replace the section elements with divs.
 
