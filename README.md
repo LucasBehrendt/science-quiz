@@ -112,7 +112,7 @@ In the following section I will provide an overview of the features included in 
 
 - The current quiz question is displayed below the game bar, with four options presented as buttons in a 2x2 grid below the question. When a user answers a question, the result will be displayed in the form of the option clicked either turning green for a correct answer, or red for an incorrect answer. If answered incorrect, the correct answer will turn green as well, to help the user learn and hopefully be able to score better on a new try. When the current question has been answered a button that generates the next question will be displayed below the options, and the current options buttons are disabled so no cheating can occur.
 
-- As the user answers questions and the question counter reaches 10, the quiz game is completed and the results will be displayed.
+- The 10 questions that the user answers is generated as a shuffled array when the user initiates the quiz. This prevents the quiz from becoming repetitive. As the user answers questions and the question counter reaches 10, the quiz game is completed and the results will be displayed.
 
 - On mobile devices the quiz page layout will be adjusted to fit the screen size better. The game bar and quiz question will remain the same, but the options and the next question button will change to a column. The buttons are reduced in height for a better fit.
 
@@ -188,7 +188,7 @@ In the following section I will provide an overview of the features included in 
 
 <summary>Menu Page image - Desktop</summary>
 
-![Results Page image - Desktop](docs/images/Desktop-menu.png)
+![Menu Page image - Desktop](docs/images/Desktop-menu.png)
 
 </details>
 
@@ -196,7 +196,51 @@ In the following section I will provide an overview of the features included in 
 
 <summary>Menu Page image - Mobile</summary>
 
-![Results Page image - Mobile](docs/images/Mobile-menu.png)
+![Menu Page image - Mobile](docs/images/Mobile-menu.png)
+
+</details>
+
+### Difficulty Page
+
+- As suggested by the name, this page lets the user choose the difficulty of the quiz. The page can be accessed from the menu by clicking the burger icon in the upper right corner. As the user clicks one of the buttons the quiz starts in the selected difficulty with a randomized array of 10 questions.
+
+- When viewed on smaller devices the responsiveness behaves much like the menu does, with little changes to the layout.
+
+<details>
+
+<summary>Difficulty Page image - Desktop</summary>
+
+![Difficulty Page image - Desktop](docs/images/Desktop-difficulty.png)
+
+</details>
+
+<details>
+
+<summary>Difficulty Page image - Mobile</summary>
+
+![Difficulty Page image - Mobile](docs/images/Mobile-difficulty.png)
+
+</details>
+
+### How to Play Page
+
+- This page is simply a short description of how to play the quiz, and navigate the website. 
+
+- On smaller screen sizes the text elements will adjust to maintain a pleasing structure.
+
+<details>
+
+<summary>How to Play Page image - Desktop</summary>
+
+![How to Play Page image - Desktop](docs/images/Desktop-how-to.png)
+
+</details>
+
+<details>
+
+<summary>How to Play Page image - Mobile</summary>
+
+![How to Play Page image - Mobile](docs/images/Mobile-how-to.png)
 
 </details>
 
