@@ -225,6 +225,7 @@ button {
 /* Media Queries */
 
 /* Media query for hover effect only on desktop & laptop */
+/* Source: https://stackoverflow.com/questions/23885255/how-to-remove-ignore-hover-css-style-on-touch-devices */
 
 @media (hover: hover) {
 

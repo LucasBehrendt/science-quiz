@@ -324,9 +324,7 @@ In the following section I will provide an overview of the features included in 
 
 ### Known/Unfixed Bugs
 
-- Landscape mode ??
-
-- Menu reverts back to home ??
+- When viewed in landscape mode on mobile devices, the quiz game crops out and all buttons are not visible. A solution to this was harder than expected and after trying for a while, the fix still didn't work. I decided to leave the game as is, mostly due to lack of time and not finding a satisfying solution that wouldn't affect other parts of the website. A solution is planned to be implemented at a later stage.
 
 ## Technologies Used
 ### Languages
@@ -347,7 +345,7 @@ In the following section I will provide an overview of the features included in 
 
 - [Favicon](https://favicon.io/) - The favicon visible in the websites tab was taken from here.
 
-- [Font Awesome](https://fontawesome.com/) - The icons in the site was provided by Font Awesome.
+- [Font Awesome](https://fontawesome.com/) - The icon in the site was provided by Font Awesome.
 
 - [Git](https://git-scm.com/) - Git was used through the Gitpod terminal to commit to Git and push to Github.
 
@@ -415,6 +413,33 @@ For a more detailed explanation, see this [walkthrough](https://docs.github.com/
 
 ## Credits
 ### Code
+
+- [Stackoverflow](https://stackoverflow.com/) helped me implement a [hover disable](https://stackoverflow.com/questions/23885255/how-to-remove-ignore-hover-css-style-on-touch-devices) on touch devices and was a great source of inspiration on how to come up with my own solutions.
+
+- [Dev.to](https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj) provided a simple and elegant solution how to shuffle the quiz questions array.
+
+- This [Quora](https://www.quora.com/How-to-unhover-an-element-with-an-active-hover-with-JS) post helped me figure out how to disable the hover effect when an answer has been submitted.
+
+- [W3Schools](https://www.w3schools.com/) helped me find some great solutions for features implemented on the site, such as the [burger menu icon](https://www.w3schools.com/howto/howto_css_menu_icon.asp) and how to use [grid positioning](https://www.w3schools.com/css/css_grid.asp).
+
+- My mentor Brian helped me throughout the project, including adjusting the scope to a reasonable size, how to clean up and properly write and comment the code, and more.
+
 ### Content
+
+- The font used in the site was imported from [Google Fonts](https://fonts.google.com/).
+
+- All quiz questions were taken from [Triviawell](https://www.triviawell.com/questions/science).
+
 ### Media
+
+- The background image was provided by [Unsplash (sorce to the image)](https://unsplash.com/photos/Mm1VIPqd0OA).
+
+- The favicon was taken fron [Favicon.io](https://favicon.io/) and is credited in the code, with a link to the source.
+
+- The icon used in the site was taken from [Font Awesome](https://fontawesome.com/).
+
 ### Acknowledgements
+
+- My mentor Brian for valuable insight on what to focus on when learning JavaScript, and for help with the coding itself.
+
+- Family and friends, who helped me feel less overwhelmed when struggling with the JavaScript code.
