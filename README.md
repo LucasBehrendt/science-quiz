@@ -6,6 +6,44 @@ Science Quiz is an interactive quiz game that aims to entertain users with a fun
 
 ![Responsive Image](docs/images/responsive.png)
 
+# Table of Contents
+- [Science Quiz](#science-quiz)
+  * [User Experience (UX)](#user-experience-ux)
+    + [Site Owner Goals](#site-owner-goals)
+    + [User Goals](#user-goals)
+    + [Structure](#structure)
+    + [Design](#design)
+  * [Wireframes](#wireframes)
+  * [Features](#features)
+    + [Menu icon](#menu-icon)
+    + [Home Page](#home-page)
+    + [Quiz Page](#quiz-page)
+    + [Results Page](#results-page)
+    + [Menu Page](#menu-page)
+    + [Difficulty Page](#difficulty-page)
+    + [How to Play Page](#how-to-play-page)
+    + [Features Left to Implement](#features-left-to-implement)
+  * [Testing](#testing)
+    + [Validator Testing](#validator-testing)
+    + [Responsive Testing](#responsive-testing)
+    + [Lighthouse Testing](#lighthouse-testing)
+    + [Links and Form Testing](#links-and-form-testing)
+    + [Fixed Bugs](#fixed-bugs)
+    + [Known/Unfixed Bugs](#knownunfixed-bugs)
+  * [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Programs & Libraries](#programs--libraries)
+  * [Deployment](#deployment)
+    + [Github Pages](#github-pages)
+    + [Cloning](#cloning)
+  * [Credits](#credits)
+    + [Code](#code)
+    + [Content](#content)
+    + [Media](#media)
+    + [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## User Experience (UX) 
 ### Site Owner Goals
 
@@ -443,3 +481,5 @@ For a more detailed explanation, see this [walkthrough](https://docs.github.com/
 - My mentor Brian for valuable insight on what to focus on when learning JavaScript, and for help with the coding itself.
 
 - Family and friends, who helped me feel less overwhelmed when struggling with the JavaScript code.
+
+[Back to top](#science-quiz)
