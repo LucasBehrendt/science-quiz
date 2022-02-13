@@ -360,6 +360,8 @@ In the following section I will provide an overview of the features included in 
 
 - When clicking the "Next Question" button in the quiz game, a new question was not generated. The question count was incremented, but the same question was displayed. This was caused by an error in the function that calls the next question in the shuffled array. By examining the code the error was found in the loop to display the question, which was given the index[0] of the array. After changing this to a variable that increments with each "Next Question" button click, the solution was found.
 
+- When playing the quiz on mobile devices the home icon was positioned incorrectly. This was due to an error in style.css where a media query was mislabelled. By labelling it correctly, the issue was resolved.
+
 ### Known/Unfixed Bugs
 
 - When viewed in landscape mode on mobile devices, the quiz game crops out and all buttons are not visible. A solution to this was harder than expected and after trying for a while, the fix still didn't work. I decided to leave the game as is, mostly due to lack of time and not finding a satisfying solution that wouldn't affect other parts of the website. A solution is planned to be implemented at a later stage.
