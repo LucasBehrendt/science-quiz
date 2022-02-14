@@ -61,7 +61,6 @@ html {
 }
 
 .change .burger-line-1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-7px, 8px);
 }
 
@@ -70,7 +69,6 @@ html {
 }
 
 .change .burger-line-3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
 

@@ -300,9 +300,11 @@ In the following section I will provide an overview of the features included in 
 
   - [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Flucasbehrendt.github.io%2Fscience-quiz%2F)
 
-- Validation of the CSS code was performed through the W3C CSS Validator. No errors or warnings were found in the process. WARNING??
+- Validation of the CSS code was performed through the W3C CSS Validator. No errors were found in the process. The validator did give two warnings though, which was very simple to solve.
 
-  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results]()
+  - Both warnings was due to code in the burger icon taken from W3School, and said "-webkit-transform is a vendor extension". After searching online these lines of code are outdated and should be replaced with the common "transform" property. When removed, the warnings disappeared.
+
+  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flucasbehrendt.github.io%2Fscience-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 - The JSHint Code Quality Tool was used to validate all JavaScript code. As the code for the website has two JavaScript files for better readability, they were copied and pasted together in JSHint and no errors were found. A few warnings, all related to a couple of missed semicolons, were quickly fixed.
 
