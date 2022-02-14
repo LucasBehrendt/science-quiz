@@ -307,7 +307,7 @@ button {
 
 /* For media screens 700px wide and down */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:650px) {
 
     /* Game wrapper */
 
@@ -410,5 +410,19 @@ button {
     .how-to p {
         max-width: 280px;
         text-align: justify;
+    }
+}
+
+/* For landscape on mobile devices */
+
+@media screen and (max-height:500px) {
+    #game-wrapper {
+        top: 65%;
+    }
+}
+
+@media screen and (max-height:370px) {
+    #game-wrapper {
+        top: 85%;
     }
 }
