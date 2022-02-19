@@ -305,7 +305,7 @@ button {
     }
 }
 
-/* For media screens 700px wide and down */
+/* For media screens 650px wide and down */
 
 @media screen and (max-width:650px) {
 
@@ -328,6 +328,11 @@ button {
     #welcome-title {
         font-size: 200%;
         margin-top: 100px;
+    }
+
+    #welcome-text {
+        line-height: 30px;
+        margin-bottom: 95px;
     }
 
     button {
@@ -398,7 +403,8 @@ button {
     /* Difficulty selection section */
 
     .difficulty h1 {
-        margin-top: 75px;
+        margin: 75px 20px 0;
+        font-size: 175%;
     }
 
     .difficulty button:nth-child(2) {
@@ -410,6 +416,95 @@ button {
     .how-to p {
         max-width: 280px;
         text-align: justify;
+    }
+}
+
+/* For media screens 340px wide and down */
+
+@media screen and (max-width:340px) {
+
+    /* Game wrapper */
+
+    #game-wrapper {
+        width: 260px;
+        height: 540px;
+    }
+
+    /* Home welcome page */
+
+    #welcome-title {
+        font-size: 150%;
+    }
+
+    #welcome-text {
+        font-size: 125%;
+        line-height: 25px;
+    }
+
+    button {
+        height: 40px;
+        font-size: 125%;
+    }
+
+    /* Quiz game section */
+
+    .home-icon {
+        font-size: 125%;
+    }
+
+    #question-count {
+        font-size: 125%;
+    }
+
+    #score {
+        font-size: 125%;
+        left: 72%;
+    }
+
+    #question-text {
+        font-size: 125%;
+    }
+
+    #next-question {
+        top: 89%;
+    }
+
+    /* Results section */
+
+    .result h2 {
+        font-size: 150%;
+    }
+
+    .result p {
+        max-width: 240px;
+        font-size: 125%;
+    }
+
+    #play-again {
+        top: 78%;
+    }
+
+    /* Difficulty selection section */
+
+    .difficulty h1 {
+        font-size: 150%;
+    }
+
+    .difficulty button:nth-child(2) {
+        margin-top: 65px;
+    }
+
+    /* How to play section */
+
+    .how-to h1 {
+        font-size: 150%;
+    }
+
+    .how-to p {
+        max-width: 240px;
+        font-size: 125%;
+        line-height: 22px;
+        margin: 40px auto;
     }
 }
 
