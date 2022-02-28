@@ -34,7 +34,7 @@ Science Quiz is an interactive quiz game that aims to entertain users with a fun
     + [Languages](#languages)
     + [Programs & Libraries](#programs--libraries)
   * [Deployment](#deployment)
-    + [Github Pages](#github-pages)
+    + [GitHub Pages](#github-pages)
     + [Cloning](#cloning)
   * [Credits](#credits)
     + [Code](#code)
@@ -48,14 +48,14 @@ Science Quiz is an interactive quiz game that aims to entertain users with a fun
 ### Site Owner Goals
 
 - Provide an entertaining and challenging quiz game that users enjoy.
-- Present a well designed, structured website with clear purpose and navigation.
+- Present a well-designed, structured website with clear purpose and navigation.
 - Leave the user with a sense of accomplishment and some new knowledge.
 
 ### User Goals
 
 - Understand the purpose of the game instantly.
 - Have a positive feeling from the design and structure of the website.
-- Test my knowledge in a fun and reasonably time consuming game.
+- Test my knowledge in a fun and reasonably time-consuming game.
 - Easily navigate the site and be able to choose different difficulty levels.
 - Receive feedback on my score and be able to easily play again.
 
@@ -110,7 +110,7 @@ In the following section I will provide an overview of the features included in 
 
 ### Menu icon
 
-- The menu icon is a so called burger icon that users can utilize to navigate throughout the site. When clicked, the icon will animate into an X and the menu will appear. To close the menu, simply click the X and the home page will be displayed again. The menu itself will be covered further down this file.
+- The menu icon is a so-called burger icon that users can utilize to navigate throughout the site. When clicked, the icon will animate into an X and the menu will appear. To close the menu, simply click the X and the home page will be displayed again. The menu itself will be covered further down this file.
 
 <details>
 
@@ -144,13 +144,13 @@ In the following section I will provide an overview of the features included in 
 
 ### Quiz Page
 
-- The quiz page is the heart of the site, and will be displayed when the user either clicks "Start Quiz" on the home page or chooses a difficulty from the menu. 
+- The quiz page is the heart of the site and will be displayed when the user either clicks "Start Quiz" on the home page or chooses a difficulty from the menu. 
 
 - At the top of the page lies a game bar. At the left side of the game bar a home icon is found, which if clicked takes the user back to the home page. In the middle there is a question counter which increments with each question answered, and to the right in the game bar a score count can be found, which will keep track of the number of correct answers submitted by the user.
 
 - The current quiz question is displayed below the game bar, with four options presented as buttons in a 2x2 grid below the question. When a user answers a question, the result will be displayed in the form of the option clicked either turning green for a correct answer, or red for an incorrect answer. If answered incorrect, the correct answer will turn green as well, to help the user learn and hopefully be able to score better on a new try. When the current question has been answered a button that generates the next question will be displayed below the options, and the current options buttons are disabled so no cheating can occur.
 
-- The 10 questions that the user answers is generated as a shuffled array when the user initiates the quiz. This prevents the quiz from becoming repetitive. As the user answers questions and the question counter reaches 10, the quiz game is completed and the results will be displayed.
+- The 10 questions that the user answers are generated as a shuffled array when the user initiates the quiz. This prevents the quiz from becoming repetitive. As the user answers questions and the question counter reaches 10, the quiz game is completed, and the results will be displayed.
 
 - On mobile devices the quiz page layout will be adjusted to fit the screen size better. The game bar and quiz question will remain the same, but the options and the next question button will change to a column. The buttons are reduced in height for a better fit.
 
@@ -218,7 +218,7 @@ In the following section I will provide an overview of the features included in 
 
 ### Menu Page
 
-- The menu is a small navigation menu that adds to the overall experience, while maintaining a simple and elegant structure. By clicking the burger icon the user can access the menu and, from here, navigate to Home, Difficulty or How to Play. The Home button simply directs the user back to the home page, while the Difficulty and How to Play buttons takes the user to the corresponding pages, which will be described below this feature.
+- The menu is a small navigation menu that adds to the overall experience, while maintaining a simple and elegant structure. By clicking the burger icon, the user can access the menu and, from here, navigate to Home, Difficulty or How to Play. The Home button simply directs the user back to the home page, while the Difficulty and How to Play buttons takes the user to the corresponding pages, which will be described below this feature.
 
 - On smaller screen sizes the layout remains the same, and the buttons are slimmed in the same way as the other pages.
 
@@ -262,7 +262,7 @@ In the following section I will provide an overview of the features included in 
 
 ### How to Play Page
 
-- This page is simply a short description of how to play the quiz, and navigate the website. 
+- This page is simply a short description of how to play the quiz and navigate the website. 
 
 - On smaller screen sizes the text elements will adjust to maintain a pleasing structure.
 
@@ -284,7 +284,7 @@ In the following section I will provide an overview of the features included in 
 
 ### Features Left to Implement
 
-- A system that keeps highscores and incentivizes the user even more to try and beat their previous score.
+- A system that keeps high scores and incentivizes the user even more to try and beat their previous score.
 - A large database of quiz questions to allow the user to play the quiz multiple times without having to answer the same questions over and over.
 
 ## Testing
@@ -292,17 +292,17 @@ In the following section I will provide an overview of the features included in 
 
 - To ensure that all HTML code of the website is correct, validation through the W3C Markup Validator was performed and no errors were found in the HTML code. There was, however, some warnings that was fairly simple to solve.
 
-  - The home icon on the quiz page and results page has an Aria-label to improve accessibility. Since an icon element does not register as a link or button, a warning was issued that said "possible missuse of aria-label". After some searching for the best solution, this was solved by wrapping the icon in a button element and styling it to maintain the same appearance.
+  - The home icon on the quiz page and results page has an Aria-label to improve accessibility. Since an icon element does not register as a link or button, a warning was issued that said, "possible misuse of aria-label". After some searching for the best solution, this was solved by wrapping the icon in a button element and styling it to maintain the same appearance.
 
-  - The different pages in the website were initially sections, but this caused a warning which stated that "section lacks heading element". Since a heading element was not necessary in a few of the sections the best solution would simply be to replace the section elements with divs.
+  - The different pages on the website were initially sections, but this caused a warning which stated that "section lacks heading element". Since a heading element was not necessary in a few of the sections the best solution would simply be to replace the section elements with divs.
 
-  - After handling these warnings there are now no errors or warnings in the website.
+  - After handling these warnings there are now no errors or warnings on the website.
 
   - [W3C Markup Validator](https://validator.w3.org/) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Flucasbehrendt.github.io%2Fscience-quiz%2F)
 
-- Validation of the CSS code was performed through the W3C CSS Validator. No errors were found in the process. The validator did give two warnings though, which was very simple to solve.
+- Validation of the CSS code was performed through the W3C CSS Validator. No errors were found in the process. The validator did give two warnings though, which were very simple to solve.
 
-  - Both warnings was due to code in the burger icon taken from W3School, and said "-webkit-transform is a vendor extension". After searching online these lines of code are outdated and should be replaced with the common "transform" property. When removed, the warnings disappeared.
+  - Both warnings were due to code in the burger icon taken from W3School, and said "-webkit-transform is a vendor extension". After searching online these lines of code are outdated and should be replaced with the common "transform" property. When removed, the warnings disappeared.
 
   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flucasbehrendt.github.io%2Fscience-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
@@ -320,11 +320,11 @@ In the following section I will provide an overview of the features included in 
 
 ### Responsive Testing
 
-- You can open DevTools with keyboard shortcuts (CMD+Opt+I for Mac OS or Ctrl+Shift+I for Linux and Windows), through the menu bar in the top right corner and go to “More Tools” > “Developer Tools.” or by rightclicking on any web page and select "Inspect". To test responsiveness click on the "device" icon on the left side, above the source code window or with the keyboard shortcut CMD+Shift+M for Mac OS or Ctrl+Shift+M for Linux and Windows. Under 'Dimensions' you can choose between different devices to emulate, or you can drag the handles to resize the window to your preffered screen width by choosing 'Responsive'.
+- You can open DevTools with keyboard shortcuts (CMD+Opt+I for Mac OS or Ctrl+Shift+I for Linux and Windows), through the menu bar in the top right corner and go to “More Tools” > “Developer Tools.” or by right-clicking on any web page and select "Inspect". To test responsiveness, click on the "device" icon on the left side, above the source code window or with the keyboard shortcut CMD+Shift+M for Mac OS or Ctrl+Shift+M for Linux and Windows. Under 'Dimensions' you can choose between different devices to emulate, or you can drag the handles to resize the window to your preferred screen width by choosing 'Responsive'.
 
-- To test the responsiveness of the website multiple devices were used to play the quiz on including a Desktop, Laptop, Ipad Air, Samsung Galaxy S20, Iphone 12, Iphone X, Iphone 8 and Iphone SE(2016). The site was also tested on different browsers, such as Chrome, Edge, Safari and Firefox.
+- To test the responsiveness of the website multiple devices were used to play the quiz on including a Desktop, Laptop, iPad Air, Samsung Galaxy S20, iPhone 12, iPhone X, iPhone 8 and iPhone SE (2016). The site was also tested on different browsers, such as Chrome, Edge, Safari and Firefox.
 
-- Using Chrome DevTools, the site was optimized for all screen widths down to 320px.
+- Using Chrome DevTools, the site was optimized for all screen widths down to 260px.
 
 ### Lighthouse Testing
 
@@ -350,25 +350,25 @@ In the following section I will provide an overview of the features included in 
 
 - All navigational links and buttons have been tested to ensure that no broken links exists and that the correct targets are reached. The menu is behaving correctly and the buttons to start the quiz are all responding as expected.
 
-- All buttons in the quiz game responds as expected and, when a question is answered, the buttons are disabled. If the home icon is clicked while the quiz is running, the page is refreshed and the user is taken to the home page. The "Next Question" button correctly iterates through the array of quiz questions until the maximum question count is reached. Both the question count and the score count increments as expected.
+- All buttons in the quiz game responds as expected and, when a question is answered, the buttons are disabled. If the home icon is clicked while the quiz is running, the page is refreshed, and the user is taken to the home page. The "Next Question" button correctly iterates through the array of quiz questions until the maximum question count is reached. Both the question count and the score count increments as expected.
 
 - When all 10 questions are answered the results page is displayed as expected. Depending on the users score, the correct corresponding message is displayed. The "Play Again" button reloads the page as expected. The home icon behaves the same as on the quiz page.
 
 ### Fixed Bugs
 
-- When answering a quesion wrong, the button did not turn red instantly, but only after the cursor was moved slightly and not all options buttons had the hover function disabled. Instead of disabling the hover function in an if/else statement, all buttons are now looped through to disable them correctly. This also fixed the issue with the "wrong answer" button not turning red instantly on desktop and laptops.
+- When answering a question wrong, the button did not turn red instantly, but only after the cursor was moved slightly and not all options buttons had the hover function disabled. Instead of disabling the hover function in an if/else statement, all buttons are now looped through to disable them correctly. This also fixed the issue with the "wrong answer" button not turning red instantly on desktop and laptops.
 
-- When playing the quiz game on mobile devices the "wrong answer" colour issue persisted, and to solve this the hover effect on all buttons were removed on devices that utilize touchscreens. When using these devices the hover effect has no meaning anyway since most commonly a mouse is not used.
+- When playing the quiz game on mobile devices the "wrong answer" colour issue persisted, and to solve this the hover effect on all buttons were removed on devices that utilize touchscreens. When using these devices, the hover effect has no meaning anyway since most commonly a mouse is not used.
 
 - When clicking the "Next Question" button in the quiz game, a new question was not generated. The question count was incremented, but the same question was displayed. This was caused by an error in the function that calls the next question in the shuffled array. By examining the code the error was found in the loop to display the question, which was given the index[0] of the array. After changing this to a variable that increments with each "Next Question" button click, the solution was found.
 
-- When viewed in landscape mode on mobile devices, the quiz game cropped out and all buttons were not visible. By adding media queries for max height the cropped content is now visible and the game is playable in landscape mode. The user is required to scroll down to be able to see the entire game section, so it still looks best in portrait mode.
+- When viewed in landscape mode on mobile devices, the quiz game cropped out and all buttons were not visible. By adding media queries for max height, the cropped content is now visible and the game is playable in landscape mode. The user is required to scroll down to be able to see the entire game section, so it still looks best in portrait mode.
 
 - When playing the quiz on mobile devices the home icon was positioned incorrectly. This was due to an error in style.css where a media query was mislabelled. By labelling it correctly, the issue was resolved.
 
 ### Known/Unfixed Bugs
 
-- As of writing this readme, no known bugs remains unfixed.
+- As of writing this readme, no known bugs remain unfixed.
 
 ## Technologies Used
 ### Languages
@@ -391,9 +391,9 @@ In the following section I will provide an overview of the features included in 
 
 - [Font Awesome](https://fontawesome.com/) - The icon in the site was provided by Font Awesome.
 
-- [Git](https://git-scm.com/) - Git was used through the Gitpod terminal to commit to Git and push to Github.
+- [Git](https://git-scm.com/) - Git was used through the Gitpod terminal to commit to Git and push to GitHub.
 
-- [Github](https://github.com/) - All code for the site is stored on Github after being pushed from Git. Github Pages serves as host for the site.
+- [GitHub](https://github.com/) - All code for the site is stored on GitHub after being pushed from Git. GitHub Pages serves as host for the site.
 
 - [Google Fonts](https://fonts.google.com/) - The font used on the site was imported from Google Fonts.
 
@@ -401,14 +401,14 @@ In the following section I will provide an overview of the features included in 
 
 - [Techsini](http://techsini.com/multi-mockup/index.php) - The responsive image at the top of the README came from Techsini.
 
-- [Triviawell](https://www.triviawell.com/) - All questions for the quiz was taken from Triviawell. 
+- [Triviawell](https://www.triviawell.com/) - All questions for the quiz were taken from Triviawell. 
 
 - [Unsplash](https://unsplash.com/) - The background image for the site was provided by Unsplash.
 
 - [W3C](https://www.w3.org/) - Validation of HTML and CSS code was done with W3C.
 
 ## Deployment
-### Github Pages
+### GitHub Pages
 
 The website was deployed using GitHub Pages. The steps for the deployment process are:
 
@@ -476,9 +476,9 @@ For a more detailed explanation, see this [walkthrough](https://docs.github.com/
 
 ### Media
 
-- The background image was provided by [Unsplash (sorce to the image)](https://unsplash.com/photos/Mm1VIPqd0OA).
+- The background image was provided by [Unsplash (source to the image)](https://unsplash.com/photos/Mm1VIPqd0OA).
 
-- The favicon was taken fron [Favicon.io](https://favicon.io/) and is credited in the code, with a link to the source.
+- The favicon was taken from [Favicon.io](https://favicon.io/) and is credited in the code, with a link to the source.
 
 - The icon used in the site was taken from [Font Awesome](https://fontawesome.com/).
 

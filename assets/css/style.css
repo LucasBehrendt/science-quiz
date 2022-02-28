@@ -28,8 +28,7 @@ html {
 /* Game wrapper */
 
 #game-wrapper {
-    background-color: #021025;
-    opacity: 0.98;
+    background-color: rgba(2, 16, 37, 0.97);
     height: 600px;
     width: 900px;
     top: 50%;
